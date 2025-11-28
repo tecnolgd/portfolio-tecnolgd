@@ -1,9 +1,9 @@
 :root {
-    --color-primary: #2183ad; /* A clean blue for CTAs */
-    --color-secondary: #2f4551; /* Dark gray for backgrounds */
-    --color-text: #d1d7e1; /* Light gray text */
-    --color-bg: #0f0f48e6; /* Deep dark blue background */
-    --color-card: #313c4c; /* Slightly lighter card background */
+    --color-primary: #2389b5; /* A clean blue for CTAs */
+    --color-secondary: #22333c; /* Dark gray for backgrounds */
+    --color-text: #b9bdc3; /* Light gray text */
+    --color-bg: #080835f5; /* Deep dark blue background */
+    --color-card: #162338; /* Slightly lighter card background */
     --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -180,6 +180,8 @@ footer {
     text-align: center;
     padding: 2rem 0;
     border-top: 1px solid var(--color-card);
+    background-color: #051633;
+    color:#aeb0b4
 }
 
 /* Responsive Adjustments */
