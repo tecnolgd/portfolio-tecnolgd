@@ -1,11 +1,11 @@
 :root {
     --bg: #050505;
     --text: #e8e8e8;
-    --muted: #a1a1aa; /* Lightened for better remote readability */
+    --muted: #a1a1aa; 
     --accent: #3b82f6;
-    --border: #27272a;
+    --border: #1e1e1e;
     --success: #10b981;
-    --font-mono: 'JetBrains Mono', monospace;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
     --font-sans: 'Inter', system-ui, sans-serif;
 }
 
@@ -16,80 +16,83 @@ body {
     color: var(--text);
     font-family: var(--font-sans);
     line-height: 1.6;
-    /* Increased base font size for remote readability */
+    /* Increased base size for remote-friendly readability */
     font-size: 18px; 
-    padding: 10vh 5vw;
+    padding: 6rem 2rem;
 }
 
 header, main {
-    max-width: 850px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
-/* THE NAME: Refined the // style to look like a high-end IDE */
+/* THE NAME: Clean and professional */
 h1 { 
     font-family: var(--font-mono); 
     font-size: 1.1rem; 
     font-weight: 500; 
     color: var(--accent); 
     margin-bottom: 2.5rem; 
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-h1::before {
-    content: "//";
-    color: var(--muted);
-    opacity: 0.5;
+    text-transform: lowercase;
 }
 
 .hero-statement {
-    font-size: clamp(2rem, 5vw, 3rem); /* Scalable text for different monitors */
+    font-size: clamp(2rem, 5vw, 2.8rem);
     font-weight: 800;
     line-height: 1.1;
-    letter-spacing: -0.04em;
-    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
     color: #fff;
 }
 
 .hero-sub {
-    font-size: 1.25rem;
+    font-size: 1.3rem; /* Larger sub-text */
     color: var(--muted);
-    max-width: 700px;
+    max-width: 750px;
     margin-bottom: 3rem;
 }
 
-/* PROJECTS: Improved spacing for scan-ability */
+/* SECTION HEADERS */
 h2 {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--accent);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin: 5rem 0 2rem 0;
-}
-
-.project-entry {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 4rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.project-meta {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--muted);
-    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 6rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+h2::after {
+    content: "";
+    height: 1px;
+    background: var(--border);
+    flex-grow: 1;
+}
+
+/* THE SIDEBAR GRID: The "Elite" Layout */
+.project-entry {
+    display: grid;
+    grid-template-columns: 180px 1fr; /* Wider sidebar for larger font */
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+.project-sidebar {
+    font-family: var(--font-mono);
+    font-size: 0.9rem; /* Increased from 0.75rem */
+    color: var(--muted);
+    border-right: 1px solid var(--border);
+    padding-right: 1.5rem;
+    line-height: 1.8;
 }
 
 .project-title {
-    font-size: 1.75rem;
+    font-size: 1.85rem; /* Bold, clear title */
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: #fff;
 }
 
@@ -97,70 +100,80 @@ h2 {
     font-family: var(--font-mono);
     font-size: 1rem;
     color: var(--success);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     display: block;
     font-weight: 500;
 }
 
 .project-desc {
-    font-size: 1.1rem;
+    font-size: 1.15rem; /* Larger prose for easy reading */
     color: var(--text);
-    max-width: 750px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 650px;
 }
 
 .tech-stack {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--muted);
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 1.5rem;
+    opacity: 0.8;
 }
 
-.tech-stack span::before {
-    content: "#";
-    color: var(--accent);
-}
-
-/* LINKS: Modernized */
+/* LINKS */
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     font-family: var(--font-mono);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 a {
-    color: var(--accent);
+    color: var(--text);
     text-decoration: none;
     transition: 0.2s;
 }
 
-a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+.nav-links a {
+    color: var(--muted);
+    border-bottom: 1px solid transparent;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
 }
 
 .case-study-link {
     font-family: var(--font-mono);
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    border-radius: 4px;
     font-size: 0.9rem;
-    margin-top: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 0.6rem 1.2rem;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 .case-study-link:hover {
     background: var(--accent);
     color: #fff;
-    text-decoration: none;
+    border-color: var(--accent);
 }
 
-/* Responsive fix for mobile */
-@media (max-width: 600px) {
-    body { padding: 3rem 1.5rem; }
-    .nav-links { flex-direction: column; gap: 1rem; }
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .project-entry {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1rem;
+        padding-right: 0;
+    }
 }
