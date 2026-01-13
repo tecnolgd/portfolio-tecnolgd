@@ -1,112 +1,181 @@
+/* 1. SYSTEM CONFIG (Variables) */
 :root {
-    --bg: #05051a; /* Deeper, cleaner dark blue */
-    --card-bg: rgba(22, 35, 56, 0.4);
-    --border: rgba(35, 137, 181, 0.2);
-    --accent: #2389b5; /* Your original primary blue */
-    --accent-glow: rgba(35, 137, 181, 0.4);
-    --text-main: #e2e8f0;
-    --text-muted: #94a3b8;
-    --success: #10b981;
+    --bg: #050505;          /* Pure obsidian */
+    --text: #e2e8f0;        /* Soft white for readability */
+    --muted: #64748b;       /* Slate gray for secondary data */
+    --accent: #3b82f6;      /* High-precision blue */
+    --border: #1e1e1e;      /* Subtle structural lines */
+    --success: #10b981;     /* Performance metrics green */
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
+
+/* 2. CORE RESET & BASE */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
     background-color: var(--bg);
-    background-image: radial-gradient(circle at 50% -20%, #1e293b 0%, var(--bg) 80%);
-    color: var(--text-main);
+    color: var(--text);
     font-family: var(--font-sans);
     line-height: 1.6;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
+    -webkit-font-smoothing: antialiased;
 }
 
-header, main {
-    max-width: 1000px;
+header, main, footer {
+    max-width: 900px;
     margin: 0 auto;
 }
 
-/* Hero Section */
-.hero { margin-bottom: 6rem; }
+/* 3. TYPOGRAPHY HIERARCHY */
 h1 { 
-    font-size: 3.5rem; 
-    font-weight: 800; 
-    letter-spacing: -0.05em;
-    margin-bottom: 1rem;
+    font-family: var(--font-mono); 
+    font-size: 1rem; 
+    font-weight: 400; 
+    color: var(--accent); 
+    margin-bottom: 2rem; 
+    text-transform: lowercase;
 }
 
-/* Modern Project Cards */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
+.hero-statement {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
 }
 
-.project-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 2rem;
-    backdrop-filter: blur(12px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
+.hero-sub {
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 650px;
+    margin-bottom: 2.5rem;
 }
 
-/* The "Hacker" Glow on Hover */
-.project-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px -10px var(--accent-glow);
-}
-
-.project-card::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 2px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    transform: translateX(-100%);
-    transition: 0.5s;
-}
-
-.project-card:hover::before { transform: translateX(100%); }
-
-/* Card Typography */
-.project-meta {
+h2 {
     font-family: var(--font-mono);
     font-size: 0.75rem;
-    color: var(--accent);
+    color: var(--muted);
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    display: block;
+    letter-spacing: 0.2em;
+    margin: 4rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.project-card h3 { font-size: 1.4rem; margin-bottom: 1rem; }
+h2::after {
+    content: "";
+    height: 1px;
+    background: var(--border);
+    flex-grow: 1;
+}
 
-.impact-metric {
+/* 4. ELITE PROJECT LIST (Grid Layout) */
+.project-entry {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.project-sidebar {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    border-right: 1px solid var(--border);
+    padding-right: 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.performance-metric {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--success);
-    background: rgba(16, 185, 129, 0.1);
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    display: inline-block;
     margin-bottom: 1rem;
+    display: block;
 }
 
-.tech-tag {
+.project-desc {
+    font-size: 1rem;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.tech-stack {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    margin-right: 0.8rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    opacity: 0.8;
 }
 
-.btn-group { display: flex; gap: 1rem; margin-top: 2rem; }
-.btn {
-    padding: 0.7rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.2s;
+/* 5. NAVIGATION & LINKS */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
 }
-.btn.primary { background: var(--accent); color: white; }
-.btn.secondary { border: 1px solid var(--border); color: var(--text-main); }
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.nav-links a {
+    color: var(--muted);
+    border-bottom: 1px solid transparent;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+}
+
+.case-study-link {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.8rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.case-study-link:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+/* 6. RESPONSIVE DEGRADATION */
+@media (max-width: 768px) {
+    .project-entry {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .project-sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.5rem;
+        padding-right: 0;
+    }
+
+    .hero-statement {
+        font-size: 1.75rem;
+    }
+}
