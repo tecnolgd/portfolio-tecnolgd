@@ -3,69 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tecnolgd | Systems & Infrastructure Engineer</title>
+    <title>tecnolgd | Infrastructure Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Systems Engineer specializing in low-latency infrastructure, distributed systems, and C++/Node.js performance.">
 </head>
 <body>
 
     <header>
-    <h1>tecnolgd</h1>
-    <p class="tagline">High-Performance Systems Engineer building resilient infrastructure and low-latency distributed services.</p>
-    
-    <div class="btn-group">
-        <a href="mailto:your.email@gmail.com" class="btn primary">Inquire for Collaboration</a>
-        <a href="https://github.com/tecnolgd" class="btn secondary">View Source Code</a>
-        <a href="#" class="btn secondary">Technical Blog</a>
-    </div>
-</header>
+        <h1>tecnolgd // sys.infra</h1>
+        <div class="hero-statement">
+            Architecting high-availability systems and low-latency infrastructure.
+        </div>
+        <div class="hero-sub">
+            Focused on distributed primitives, C++ performance tuning, and verifiable data pipelines. Operating globally with a focus on European/Global remote teams.
+        </div>
+        <nav class="nav-links">
+            <a href="mailto:your@email.com">EMAIL</a>
+            <a href="https://github.com/tecnolgd">GITHUB</a>
+            <a href="https://tecnolgd.github.io/blog-tecnolgd/">TECHNICAL_BLOG</a>
+            <a href="resume.pdf">RESUME_PDF</a>
+        </nav>
+    </header>
+
     <main>
-    <section>
-        <h2>Technical Expertise</h2>
-        <p style="font-family: var(--font-mono); font-size: 0.85rem;">
-            [L2-L4] C, C++, Linux Kernel, x86_64, eBPF <br>
-            [L7] Node.js, Distributed Systems (Raft/Paxos), gRPC, PostgreSQL <br>
-            [Infra] Kubernetes, Terraform, Prometheus/Grafana, CI/CD
-        </p>
-    </section>
+        <h2>01_core_systems</h2>
 
-    <section>
-        <h2>Engineering Projects</h2>
-
-        <div class="project-item">
-            <div class="project-meta">01 // DISTRIBUTED SYSTEMS</div>
-            <h3>Project Placeholder Name</h3>
-            <p>Briefly describe the **bottleneck** you solved. "Architected a custom load balancer to handle 50k concurrent WebSockets by bypassing the standard Node.js cluster module."</p>
-            <div class="impact-badge">Result: 40% reduction in memory overhead</div>
-            <div class="project-links">
-                <a href="#">[Github]</a>
-                <a href="#">[Technical Case Study]</a>
+        <div class="project-entry">
+            <div class="project-sidebar">
+                L2-L4 SYSTEMS<br>C++ / LINUX
+            </div>
+            <div class="project-content">
+                <div class="project-title">Edge-Fabric Distributed Cache</div>
+                <span class="performance-metric">→ 85% REDUCTION IN TAIL LATENCY</span>
+                <p class="project-desc">
+                    A custom consistent hashing implementation designed to eliminate thundering herd issues in edge nodes. Optimized using zero-copy memory mapping and io_uring.
+                </p>
+                <div class="tech-stack">
+                    <span>#IO_URING</span> <span>#GRPC</span> <span>#POSIX_THREADS</span>
+                </div>
+                <a href="case-study-cache.html" class="case-study-link">VIEW_ARCHITECTURE_DETIALS</a>
             </div>
         </div>
 
-        <div class="project-item">
-            <div class="project-meta">02 // PERFORMANCE ENGINEERING</div>
-            <h3>Project Placeholder Name</h3>
-            <p>Describe the **low-level optimization**. "Memory-mapped I/O implementation for a high-speed logging engine in C++."</p>
-            <div class="impact-badge">Result: 2.1GB/s throughput on NVMe</div>
-            <div class="project-links">
-                <a href="#">[Github]</a>
-                <a href="#">[Technical Case Study]</a>
+        <div class="project-entry">
+            <div class="project-sidebar">
+                DISTRIBUTED LOGS<br>NODE.JS / CRYPTO
+            </div>
+            <div class="project-content">
+                <div class="project-title">Verifiable Observability Pipeline</div>
+                <span class="performance-metric">→ CRYPTOGRAPHIC INTEGRITY GUARANTEE</span>
+                <p class="project-desc">
+                    Implemented an audit logging system using Merkle Trees to provide verifiable proof of log integrity. Designed for high-compliance financial infrastructure.
+                </p>
+                <div class="tech-stack">
+                    <span>#MERKLE_TREES</span> <span>#FASTIFY</span> <span>#DOCKER_SWARM</span>
+                </div>
+                <a href="case-study-log.html" class="case-study-link">VIEW_CASE_STUDY</a>
             </div>
         </div>
-    </section>
+    </main>
 
-    <section>
-        <h2>Writing & Deep Dives</h2>
-        <p>I publish research on system internals, performance bottlenecks, and distributed architecture on my blog.</p>
-        <div class="btn-group" style="margin-top: 1rem;">
-            <a href="https://tecnolgd.github.io/blog-tecnolgd/" class="btn">Access Technical Blog</a>
-        </div>
-    </section>
-</main>
-
-    <footer>
-        <p>&copy; 2025 tecnolgd &bull; Operating Globally &bull; [Your Timezone, e.g., UTC+5:30]</p>
+    <footer style="margin-top: 8rem; border-top: 1px solid var(--border); padding-top: 2rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted);">
+        STATUS: AVAILABLE // LOC: [TIMEZONE] // BUILT_WITH: STATIC_HTML_CSS
     </footer>
 
 </body>
