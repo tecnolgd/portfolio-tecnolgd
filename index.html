@@ -24,70 +24,49 @@
     </header>
 
     <main>
-        <section class="expertise">
-            <h2>Technical Foundations</h2>
-            <div class="expertise-grid">
-                <article>
-                    <h3>Systems Programming</h3>
-                    <p>High-performance C/C++, Memory Management, Linux Internals, Concurrency primitives.</p>
-                </article>
-                <article>
-                    <h3>Distributed Infrastructure</h3>
-                    <p>Distributed Caching, Consensus Algorithms, gRPC/Protobuf, Load Balancing.</p>
-                </article>
-                <article>
-                    <h3>Observability & SRE</h3>
-                    <p>Data Integrity (Merkle Trees), Logging Pipelines, CI/CD for Infrastructure, Docker.</p>
-                </article>
+    <section>
+        <h2>Technical Expertise</h2>
+        <p style="font-family: var(--font-mono); font-size: 0.85rem;">
+            [L2-L4] C, C++, Linux Kernel, x86_64, eBPF <br>
+            [L7] Node.js, Distributed Systems (Raft/Paxos), gRPC, PostgreSQL <br>
+            [Infra] Kubernetes, Terraform, Prometheus/Grafana, CI/CD
+        </p>
+    </section>
+
+    <section>
+        <h2>Engineering Projects</h2>
+
+        <div class="project-item">
+            <div class="project-meta">01 // DISTRIBUTED SYSTEMS</div>
+            <h3>Project Placeholder Name</h3>
+            <p>Briefly describe the **bottleneck** you solved. "Architected a custom load balancer to handle 50k concurrent WebSockets by bypassing the standard Node.js cluster module."</p>
+            <div class="impact-badge">Result: 40% reduction in memory overhead</div>
+            <div class="project-links">
+                <a href="#">[Github]</a>
+                <a href="#">[Technical Case Study]</a>
             </div>
-        </section>
+        </div>
 
-        <section class="projects">
-            <h2>Selected Engineering Projects</h2>
-            <div class="project-grid">
-
-                <article class="project-card">
-                    <div class="project-tagline">High-Performance Computing</div>
-                    <h3>Project One: [Core System Name]</h3>
-                    <p>A low-latency system designed to solve [Specific Problem]. Focused on minimizing cache misses and optimizing I/O throughput.</p>
-                    <p class="impact-metric"><strong>Metric:</strong> Reduced tail latency by 40% vs. standard implementations.</p>
-                    <ul class="tech-list">
-                        <li>C++20</li><li>Linux I/O</li><li>Benchmarking</li>
-                    </ul>
-                    <a href="case-study-1.html" class="link-more">Engineering Case Study &rarr;</a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-tagline">Distributed Systems</div>
-                    <h3>Project Two: [Service Name]</h3>
-                    <p>A distributed state management tool utilizing [Algorithm, e.g., Raft or Consistent Hashing] to ensure high availability across nodes.</p>
-                    <p class="impact-metric"><strong>Metric:</strong> Maintained 100% data consistency during simulated 3-node failure.</p>
-                    <ul class="tech-list">
-                        <li>Node.js</li><li>Distributed Systems</li><li>Redis</li>
-                    </ul>
-                    <a href="case-study-2.html" class="link-more">Engineering Case Study &rarr;</a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-tagline">Infrastructure & Security</div>
-                    <h3>Project Three: [Tool Name]</h3>
-                    <p>A verifiable audit logging system using Merkle Trees to ensure cryptographic proof of data integrity for high-compliance environments.</p>
-                    <p class="impact-metric"><strong>Metric:</strong> Zero-overhead verifiable logs for 1M+ transactions.</p>
-                    <ul class="tech-list">
-                        <li>Node.js</li><li>Cryptography</li><li>PostgreSQL</li>
-                    </ul>
-                    <a href="case-study-3.html" class="link-more">Engineering Case Study &rarr;</a>
-                </article>
-
+        <div class="project-item">
+            <div class="project-meta">02 // PERFORMANCE ENGINEERING</div>
+            <h3>Project Placeholder Name</h3>
+            <p>Describe the **low-level optimization**. "Memory-mapped I/O implementation for a high-speed logging engine in C++."</p>
+            <div class="impact-badge">Result: 2.1GB/s throughput on NVMe</div>
+            <div class="project-links">
+                <a href="#">[Github]</a>
+                <a href="#">[Technical Case Study]</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="blog-link-section">
-            <h2>Technical Writing</h2>
-            <p>I document my deep-dives into system internals and performance engineering.</p>
-            <a href="https://tecnolgd.github.io/blog-tecnolgd/" class="btn primary blog-btn">Read My Engineering Blog</a>
-        </section>
-    </main>
+    <section>
+        <h2>Writing & Deep Dives</h2>
+        <p>I publish research on system internals, performance bottlenecks, and distributed architecture on my blog.</p>
+        <div class="btn-group" style="margin-top: 1rem;">
+            <a href="https://tecnolgd.github.io/blog-tecnolgd/" class="btn">Access Technical Blog</a>
+        </div>
+    </section>
+</main>
 
     <footer>
         <p>&copy; 2025 tecnolgd &bull; Operating Globally &bull; [Your Timezone, e.g., UTC+5:30]</p>
