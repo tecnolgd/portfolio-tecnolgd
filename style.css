@@ -1,194 +1,79 @@
 :root {
-    --color-primary: #2389b5; /* A clean blue for CTAs */
-    --color-secondary: #22333c; /* Dark gray for backgrounds */
-    --color-text: #b9bdc3; /* Light gray text */
-    --color-bg: #080835f5; /* Deep dark blue background */
-    --color-card: #162338; /* Slightly lighter card background */
-    --font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* The "Obsidian & Steel" Palette */
+    --bg: #030303; 
+    --card-bg: #0a0a0a;
+    --border: #1f1f1f;
+    --text-main: #e0e0e0;
+    --text-muted: #888888;
+    --accent: #2389b5; /* Primary Action */
+    --success: #10b981; /* For metrics/system-up feel */
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+    --font-sans: 'Inter', system-ui, sans-serif;
 }
 
-/* Global Reset and Body Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    font-family: var(--font-family);
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: var(--font-sans);
     line-height: 1.6;
-    scroll-behavior: smooth;
-    padding-bottom: 50px; /* Space for footer/mobile scrolling */
+    padding: 2rem 1rem;
 }
 
-main, header {
-    width: 90%;
-    max-width: 1200px;
+header, main, footer {
+    max-width: 850px; /* Narrower "Readable" width used by elite docs */
     margin: 0 auto;
 }
 
 /* Typography */
-h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-h2 { font-size: 2rem; margin-bottom: 1.5rem; color: var(--color-primary); }
-h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+h2 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin: 3rem 0 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+h3 { font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.5rem; }
 
-/* 1. HERO SECTION */
-.hero {
-    padding: 8rem 0;
-    text-align: center;
-}
+/* Components */
+.tagline { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+.highlight { color: var(--accent); font-weight: 600; }
 
-.tagline {
-    font-size: 1.25rem;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-}
-
-.cta-group {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
+.btn-group { display: flex; gap: 1rem; margin-bottom: 3rem; }
 .btn {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    transition: all 0.2s;
+}
+.btn:hover { background: var(--text-main); color: var(--bg); }
+.btn.primary { border-color: var(--accent); color: var(--accent); }
+
+/* Project Grid - Simple List Style (More professional than cards) */
+.project-item {
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--border);
+}
+.project-meta { font-family: var(--font-mono); font-size: 0.75rem; color: var(--success); margin-bottom: 0.25rem; }
+.project-links { margin-top: 0.75rem; font-family: var(--font-mono); font-size: 0.8rem; }
+.project-links a { color: var(--accent); text-decoration: none; margin-right: 1rem; }
+
+.impact-badge {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background-color 0.3s, transform 0.2s;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+    padding: 0.1rem 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    border-radius: 3px;
+    margin-top: 0.5rem;
 }
 
-.btn.primary {
-    background-color: var(--color-primary);
-    color: var(--color-bg);
-}
-
-.btn.secondary {
-    background-color: transparent;
-    border: 2px solid var(--color-text);
-    color: var(--color-text);
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-}
-
-/* 2. PROJECTS SECTION */
-.projects {
-    padding: 4rem 0;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    background-color: var(--color-card);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 5px solid var(--color-primary);
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.project-tagline {
-    font-style: italic;
-    color: var(--color-primary);
-    margin-bottom: 0.5rem;
-}
- 
-.impact-metric {
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.tech-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    padding: 0;
-}
-
-.tech-list li {
-    background-color: #334855;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-}
-
-.link-more {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* 3. EXPERTISE SECTION */
-.expertise {
-    padding: 4rem 0;
-}
-
-.expertise-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.expertise-grid h3 {
-    color: var(--color-text);
-    border-bottom: 2px solid var(--color-primary);
-    padding-bottom: 0.5rem;
-}
-
-.blog-link-section {
-    background-color: var(--color-card);
-    padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.blog-btn {
-    margin-top: 1.5rem;
-}
-
-.highlight-text {
-    color: var(--color-primary);
-    font-weight: 600;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-    margin: 3rem 0;
-}
-
-/* 4. FOOTER */
 footer {
-    text-align: center;
-    padding: 2rem 0;
-    border-top: 1px solid var(--color-card);
-    background-color: #051633;
-    color:#aeb0b4
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 1.75rem; }
-    .hero { padding: 5rem 0; }
-    .cta-group { flex-direction: column; }
-    .btn { width: 100%; }
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
 }
