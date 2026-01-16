@@ -11,74 +11,73 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
     background-color: var(--bg);
-    color: var(--text);
-    font-family: var(--font-sans);
-    line-height: 1.6;
-    /* Increased base size for remote-friendly readability */
+    color: var(--text-high);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
     font-size: 18px; 
-    padding: 6rem 2rem;
+    padding: 8vh 5vw;
 }
-    
+
 header, main {
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
-    margin-bottom: 6rem;
-    border-left: 2px solid var(--accent); /* A subtle vertical "accent" line */
-    padding-left: 2rem;
 }
 
-/* Treat the name like a system path or namespace */
-h1 { 
-    font-family: var(--font-mono); 
-    font-size: 0.95rem; /* Small, precise, intentional */
-    font-weight: 500; 
-    color: var(--muted); 
-    margin-bottom: 1.5rem; 
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
+/* --- THE HEADER (YC/ELITE STYLE) --- */
+header {
+    margin-bottom: 8rem;
 }
 
-h1 .name {
-    color: var(--text);
-    font-weight: 600;
+.namespace {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--text-low);
+    margin-bottom: 2rem;
 }
 
-h1 .directory {
-    color: var(--accent);
-    margin-right: 0.5rem;
-}
+.namespace span { color: var(--accent); }
 
 .hero-statement {
-    font-size: clamp(2.2rem, 6vw, 3.2rem); /* Large, confident type */
-    font-weight: 850; /* Extra bold for that YC / Silicon Valley look */
-    line-height: 1;
-    letter-spacing: -0.05em;
-    margin-bottom: 2rem;
-    color: #fff;
-    max-width: 800px;
+    /* Fallback for very old browsers */
+    color: #ffffff; 
+}
+
+/* Only apply clipping if the browser supports it */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .hero-statement {
+        background-image: linear-gradient(180deg, #ffffff 0%, #71717a 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: block; /* Ensures the clip box is calculated correctly */
+    }
 }
 
 .hero-sub {
-    font-size: 1.4rem; 
-    line-height: 1.5;
-    color: var(--muted);
-    max-width: 700px;
-    margin-bottom: 3.5rem;
+    font-size: 1.4rem;
+    color: var(--text-mid);
+    max-width: 720px;
+    margin-bottom: 3rem;
+    font-weight: 400;
 }
-/* SECTION HEADERS */
+
+/* --- THE GRID SYSTEM --- */
 h2 {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-low);
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin: 6rem 0 3rem 0;
+    letter-spacing: 0.3em;
+    margin: 8rem 0 3rem 0;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 h2::after {
@@ -88,108 +87,85 @@ h2::after {
     flex-grow: 1;
 }
 
-/* THE SIDEBAR GRID: The "Elite" Layout */
 .project-entry {
     display: grid;
-    grid-template-columns: 180px 1fr; /* Wider sidebar for larger font */
-    gap: 4rem;
-    margin-bottom: 6rem;
+    grid-template-columns: 220px 1fr;
+    gap: 5rem;
+    margin-bottom: 8rem;
 }
 
 .project-sidebar {
-    font-family: var(--font-mono);
-    font-size: 0.9rem; /* Increased from 0.75rem */
-    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-low);
     border-right: 1px solid var(--border);
-    padding-right: 1.5rem;
-    line-height: 1.8;
+    padding-right: 2rem;
+}
+
+.project-sidebar strong {
+    color: var(--text-mid);
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .project-title {
-    font-size: 1.85rem; /* Bold, clear title */
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
 }
 
 .performance-metric {
-    font-family: var(--font-mono);
-    font-size: 1rem;
+    font-family: 'JetBrains Mono', monospace;
     color: var(--success);
-    margin-bottom: 1.25rem;
-    display: block;
-    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .project-desc {
-    font-size: 1.15rem; /* Larger prose for easy reading */
-    color: var(--text);
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-mid);
     max-width: 650px;
+    margin-bottom: 2.5rem;
 }
 
-.tech-stack {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    color: var(--muted);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    opacity: 0.8;
-}
-
-/* LINKS */
+/* --- LINKS & ACTIONS --- */
 .nav-links {
     display: flex;
-    gap: 2.5rem;
-    font-family: var(--font-mono);
-    font-size: 0.95rem;
-}
-
-a {
-    color: var(--text);
-    text-decoration: none;
-    transition: 0.2s;
+    gap: 3rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
 }
 
 .nav-links a {
-    color: var(--muted);
-    border-bottom: 1px solid transparent;
-}
-
-.nav-links a:hover {
-    color: var(--accent);
-    border-bottom: 1px solid var(--accent);
-}
-
-.case-study-link {
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    color: var(--accent);
+    color: var(--text-mid);
     text-decoration: none;
-    border: 1px solid var(--border);
-    padding: 0.6rem 1.2rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.case-study-btn {
     display: inline-block;
-    transition: 0.3s;
+    padding: 0.8rem 1.8rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-high);
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    transition: all 0.2s;
 }
 
-.case-study-link:hover {
-    background: var(--accent);
-    color: #fff;
+.case-study-btn:hover {
     border-color: var(--accent);
+    background: var(--bg);
 }
 
-/* RESPONSIVE */
-@media (max-width: 850px) {
-    .project-entry {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .project-sidebar {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding-bottom: 1rem;
-        padding-right: 0;
-    }
+@media (max-width: 900px) {
+    .project-entry { grid-template-columns: 1fr; gap: 2rem; }
+    .project-sidebar { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
 }
