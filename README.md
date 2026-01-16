@@ -11,4 +11,3 @@ Made with only HTML and CSS, this minimalist porfolio showcases the Projects and
 ## Future upgrades 🎯
 * New and Impactful projects(obviously 💀)
 * Improved accesibility
-* Collab tab
