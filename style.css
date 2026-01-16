@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-    --bg: #080808;
-    --text-primary: #f4f4f5;
-    --text-secondary: #a1a1aa;
+    --bg: #050505;
+    --text: #f4f4f5;
+    --muted: #71717a;
     --accent: #3b82f6; 
-    --border: #1e1e1e;
+    --success: #10b981;
+    --border: #18181b;
     --font-mono: 'JetBrains Mono', monospace;
     --font-sans: 'Inter', sans-serif;
 }
@@ -14,117 +15,91 @@
 
 body {
     background-color: var(--bg);
-    color: var(--text-primary);
+    color: var(--text);
     font-family: var(--font-sans);
-    line-height: 1.7;
+    line-height: 1.6;
     font-size: 18px;
     padding: 8vh 10vw;
-    -webkit-font-smoothing: antialiased;
 }
 
-header, main {
-    max-width: 850px;
-    margin: 0 auto;
-}
+header, main { max-width: 900px; margin: 0 auto; }
 
-/* --- INTERNATIONAL HEADER --- */
-header {
-    margin-bottom: 8rem;
-}
-
+/* --- HR-FRIENDLY NAMESPACE --- */
 .namespace {
     font-family: var(--font-mono);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--accent);
     margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1em;
 }
 
 h1 {
-    font-size: 3.2rem;
-    font-weight: 700;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 800;
     letter-spacing: -0.05em;
     line-height: 1;
-    margin-bottom: 2rem;
-    color: #fff;
+    margin-bottom: 1.5rem;
 }
 
 .hero-sub {
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: var(--text-secondary);
-    max-width: 750px;
+    font-size: 1.3rem;
+    color: var(--muted);
+    max-width: 700px;
     margin-bottom: 3rem;
 }
 
-/* --- THE INDEX (No 'Projects') --- */
+/* --- THE STATS TICKER (The 'Hook') --- */
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stat-item { display: flex; flex-direction: column; }
+.stat-label { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); text-transform: uppercase; }
+.stat-value { font-family: var(--font-mono); font-size: 1.1rem; color: var(--success); font-weight: 500; }
+
+/* --- THE SYSTEM INDEX --- */
 h2 {
     font-family: var(--font-mono);
     font-size: 0.75rem;
-    color: var(--text-secondary);
+    color: var(--muted);
     text-transform: uppercase;
-    letter-spacing: 0.25em;
-    margin-bottom: 4rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    letter-spacing: 0.2em;
+    margin: 6rem 0 3rem 0;
+    display: flex; align-items: center; gap: 1rem;
 }
-
 h2::after { content: ""; height: 1px; background: var(--border); flex-grow: 1; }
 
 .system-entry {
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
-.system-metadata {
+.system-meta {
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: var(--text-secondary);
-    border-right: 1px solid var(--border);
-    padding-right: 1.5rem;
+    color: var(--muted);
+    line-height: 2;
 }
 
-.system-metadata div { margin-bottom: 1.5rem; }
-.system-metadata span { display: block; color: var(--text-primary); font-weight: 500; margin-top: 4px; }
+.system-meta b { color: var(--text); font-weight: 500; }
 
-.system-content h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    letter-spacing: -0.02em;
-}
+.system-title { font-size: 1.7rem; font-weight: 700; margin-bottom: 0.75rem; color: #fff; }
 
-.system-impact {
-    font-family: var(--font-mono);
-    font-size: 0.95rem;
-    color: #10b981;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: flex-start;
-}
+.system-desc { color: var(--muted); margin-bottom: 1.5rem; }
 
-.system-desc {
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-
-/* --- THE 'CTA' FOR INTERNATIONAL ROLES --- */
-.nav-links {
-    display: flex;
-    gap: 2.5rem;
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-}
-
-a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--border); transition: 0.2s; }
-a:hover { color: var(--accent); border-color: var(--accent); }
+/* --- CTAs --- */
+.nav-links { display: flex; gap: 2rem; font-family: var(--font-mono); font-size: 0.85rem; }
+a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: 0.2s; }
+a:hover { border-color: var(--accent); color: var(--accent); }
 
 @media (max-width: 850px) {
     .system-entry { grid-template-columns: 1fr; gap: 1rem; }
-    .system-metadata { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 2rem; width: 100%; }
+    .hero-stats { flex-direction: column; gap: 1.5rem; }
 }
