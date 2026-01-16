@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-    --bg: #050505;
-    --card-bg: #0d0d0d;
-    --text-main: #ffffff;
-    --text-muted: #a1a1aa;
+    --bg: #080808;
+    --text-primary: #f4f4f5;
+    --text-secondary: #a1a1aa;
     --accent: #3b82f6; 
-    --success: #22c55e;
     --border: #1e1e1e;
     --font-mono: 'JetBrains Mono', monospace;
     --font-sans: 'Inter', sans-serif;
@@ -16,153 +14,117 @@
 
 body {
     background-color: var(--bg);
-    color: var(--text-main);
+    color: var(--text-primary);
     font-family: var(--font-sans);
-    line-height: 1.6;
+    line-height: 1.7;
     font-size: 18px;
-    padding: 6rem 2rem;
+    padding: 8vh 10vw;
+    -webkit-font-smoothing: antialiased;
 }
 
 header, main {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
-/* --- HR FRIENDLY HEADER --- */
+/* --- INTERNATIONAL HEADER --- */
 header {
-    margin-bottom: 6rem;
-    border-left: 3px solid var(--accent);
-    padding-left: 2rem;
+    margin-bottom: 8rem;
 }
 
 .namespace {
     font-family: var(--font-mono);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--accent);
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 h1 {
-    font-size: clamp(2.2rem, 5vw, 3.5rem);
-    font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.04em;
-    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: 2rem;
+    color: #fff;
 }
 
 .hero-sub {
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    max-width: 700px;
-    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    max-width: 750px;
+    margin-bottom: 3rem;
 }
 
-/* --- BUTTONS (HR loves clear CTAs) --- */
-.nav-links {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.btn {
-    text-decoration: none;
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    transition: 0.3s;
-    border: 1px solid var(--border);
-    color: var(--text-main);
-}
-
-.btn-primary {
-    background: var(--accent);
-    border-color: var(--accent);
-    font-weight: 600;
-}
-
-.btn:hover {
-    background: #1a1a1a;
-    border-color: var(--text-muted);
-}
-
-/* --- THE WORK INDEX --- */
+/* --- THE INDEX (No 'Projects') --- */
 h2 {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--text-muted);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin: 6rem 0 3rem 0;
+    letter-spacing: 0.25em;
+    margin-bottom: 4rem;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-h2::after {
-    content: "";
-    height: 1px;
-    background: var(--border);
-    flex-grow: 1;
-}
+h2::after { content: ""; height: 1px; background: var(--border); flex-grow: 1; }
 
-.project-entry {
+.system-entry {
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 3rem;
-    margin-bottom: 5rem;
+    grid-template-columns: 200px 1fr;
+    gap: 4rem;
+    margin-bottom: 8rem;
 }
 
-.project-sidebar {
+.system-metadata {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-right: 1px solid var(--border);
+    padding-right: 1.5rem;
+}
+
+.system-metadata div { margin-bottom: 1.5rem; }
+.system-metadata span { display: block; color: var(--text-primary); font-weight: 500; margin-top: 4px; }
+
+.system-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.system-impact {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: #10b981;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.system-desc {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* --- THE 'CTA' FOR INTERNATIONAL ROLES --- */
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 2;
 }
 
-.project-sidebar b {
-    color: var(--accent);
-    font-weight: 500;
-}
+a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--border); transition: 0.2s; }
+a:hover { color: var(--accent); border-color: var(--accent); }
 
-.project-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.metric {
-    display: inline-block;
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    color: var(--success);
-    background: rgba(34, 197, 94, 0.1);
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.project-desc {
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-}
-
-.tech-tags {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-}
-
-.tag {
-    color: var(--accent);
-    background: rgba(59, 130, 246, 0.1);
-    padding: 2px 8px;
-    border-radius: 3px;
-}
-
-@media (max-width: 800px) {
-    .project-entry { grid-template-columns: 1fr; gap: 1rem; }
+@media (max-width: 850px) {
+    .system-entry { grid-template-columns: 1fr; gap: 1rem; }
+    .system-metadata { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 2rem; width: 100%; }
 }
