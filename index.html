@@ -3,85 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tecnolgd | Infrastructure Engineer</title>
+    <title>tecnolgd | Systems Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>~/tecnolgd | infrastructure_engineering</h1>
-        
-        <div class="hero-statement">
-            Architecting high-availability systems.
+        <div class="namespace">
+            <span>~/tecnolgd</span>
+            <span>v2.0.26</span>
         </div>
         
-        <div class="hero-sub">
-            Specializing in distributed primitives, C++ performance tuning, and verifiable data pipelines. Operating globally for high-impact engineering teams.
-        </div>
-
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-label">MAX_THROUGHPUT</span>
-                <span class="stat-value">48k req/s</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label">P99_LATENCY</span>
-                <span class="stat-value">18ms</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-label">INTEGRITY_PROOFS</span>
-                <span class="stat-value">100%</span>
-            </div>
-        </div>
+        <h1>Low-level systems engineering and distributed infrastructure.</h1>
+        
+        <p class="hero-sub">
+            Focused on performance-critical backend services, Linux kernel optimization, and automated infrastructure as code.
+        </p>
 
         <nav class="nav-links">
-            <a href="mailto:your@email.com">EMAIL</a>
-            <a href="https://github.com/tecnolgd">GITHUB</a>
-            <a href="#">BLOG</a>
-            <a href="#">CV_PDF</a>
+            <a href="mailto:your@email.com">Email</a>
+            <a href="https://github.com/tecnolgd">GitHub</a>
+            <a href="#">Architecture_Blog</a>
+            <a href="#">Resume.pdf</a>
         </nav>
     </header>
 
     <main>
-        <h2>// CORE_SYSTEMS</h2>
+        <h2>01 // Core_Systems_Development</h2>
 
         <div class="project-entry">
             <div class="project-sidebar">
-                L2-L4 SYSTEMS<br>C++ / LINUX
+                LANGUAGE: <span>C++20</span><br>
+                OS: <span>Linux (io_uring)</span><br>
+                METRIC: <span>10M+ ops/sec</span>
             </div>
             <div class="project-content">
-                <div class="project-title">Edge-Fabric Cache</div>
-                <span class="performance-metric">→ 85% REDUCTION IN TAIL LATENCY</span>
-                <p class="project-desc">
-                    A custom consistent hashing implementation designed to eliminate thundering herd issues in edge nodes. Optimized using zero-copy memory mapping.
+                <div class="project-title">Custom Edge-Caching Engine</div>
+                <span class="metric">Reduced p99 tail latency by 85% via zero-copy I/O</span>
+                <p>
+                    Implemented a high-concurrency caching layer for edge nodes. Used <code>io_uring</code> to bypass kernel syscall overhead and lock-free data structures to eliminate thread contention.
                 </p>
-                <div class="tech-stack">
-                    <span>#IO_URING</span> <span>#GRPC</span> <span>#POSIX_THREADS</span>
+                <div class="nav-links" style="font-size: 0.75rem; margin-top: 1rem;">
+                    <a href="#">Technical_Specs</a>
+                    <a href="#">Source</a>
                 </div>
-                <a href="#" class="case-study-link">VIEW_ARCHITECTURE_DETAILS</a>
             </div>
         </div>
 
+        <h2>02 // Infrastructure_&_Automation</h2>
+
         <div class="project-entry">
             <div class="project-sidebar">
-                DISTRIBUTED LOGS<br>NODE.JS / CRYPTO
+                STACK: <span>Terraform / Go</span><br>
+                ORCH: <span>Docker / K8s</span><br>
+                TARGET: <span>AWS / GCP</span>
             </div>
             <div class="project-content">
-                <div class="project-title">Verifiable Pipeline</div>
-                <span class="performance-metric">→ CRYPTOGRAPHIC INTEGRITY GUARANTEE</span>
-                <p class="project-desc">
-                    Implemented an audit logging system using Merkle Trees to provide verifiable proof of log integrity for high-compliance infrastructure.
+                <div class="project-title">Immutable Infrastructure Pipeline</div>
+                <span class="metric">Zero-drift deployment for multi-region clusters</span>
+                <p>
+                    Architected a verifiable CI/CD pipeline using Terraform and custom Python tooling to automate the lifecycle of ephemeral distributed testbeds. Standardized containerized environments across global regions.
                 </p>
-                <div class="tech-stack">
-                    <span>#MERKLE_TREES</span> <span>#FASTIFY</span> <span>#DOCKER</span>
+                <div class="nav-links" style="font-size: 0.75rem; margin-top: 1rem;">
+                    <a href="#">Architecture_Diagram</a>
+                    <a href="#">GitHub_Repo</a>
                 </div>
-                <a href="#" class="case-study-link">VIEW_CASE_STUDY</a>
+            </div>
+        </div>
+
+        <h2>03 // Data_Engineering_&_Tooling</h2>
+
+        <div class="project-entry">
+            <div class="project-sidebar">
+                LANGUAGE: <span>Python 3.12</span><br>
+                LIBS: <span>Pandas / Numpy</span><br>
+                OUTPUT: <span>Grafana / Prom</span>
+            </div>
+            <div class="project-content">
+                <div class="project-title">Systems Observability Suite</div>
+                <span class="metric">Real-time bottleneck detection</span>
+                <p>
+                    Developed internal tooling to parse and analyze Linux eBPF traces. Using Python for high-level data aggregation to visualize kernel-level performance regressions in production environments.
+                </p>
+                <div class="nav-links" style="font-size: 0.75rem; margin-top: 1rem;">
+                    <a href="#">Deep_Dive</a>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer style="margin-top: 8rem; border-top: 1px solid var(--border); padding: 4rem 0; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-low);">
-        STATUS: AVAILABLE // LOC: [TIMEZONE] // GLOBAL_REMOTE_READY
+    <footer style="margin-top: 10rem; font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em;">
+        // STATUS: OPEN_FOR_GLOBAL_REMOTE_ROLES // UTC+5:30
     </footer>
 
 </body>
