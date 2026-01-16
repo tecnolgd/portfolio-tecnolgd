@@ -2,72 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tecnolgd | Systems & Backend Engineer</title>
+    <title>tecnolgd | Systems Research</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="namespace">~/STAFF_SYSTEMS_ENGINEER</div>
+        <div class="namespace">~/INTERN_RESEARCH_SYSTEMS</div>
         <h1>tecnolgd</h1>
         <p class="hero-sub">
-            High-performance backend engineering. Specializing in <b>C++, Linux Kernel optimization,</b> and <b>Distributed Infrastructure</b> for global remote teams.
+            Undergraduate focused on <b>Low-level C++ Optimization</b> and <b>Distributed Infrastructure</b>. Seeking Summer 2026 Internships in Global Systems Teams.
         </p>
 
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-label">p99_LATENCY</span>
+                <span class="stat-value">18ms</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">MAX_THROUGHPUT</span>
+                <span class="stat-value">48k req/s</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">PROVENANCE</span>
+                <span class="stat-value">100%_VERIFIED</span>
+            </div>
+        </div>
+
         <nav class="nav-links">
-            <a href="mailto:your@email.com" class="btn btn-primary">CONTACT_EMAIL</a>
-            <a href="https://github.com/tecnolgd" class="btn">GITHUB</a>
-            <a href="resume.pdf" class="btn">DOWNLOAD_CV</a>
+            <a href="mailto:...">EMAIL</a>
+            <a href="...">GITHUB</a>
+            <a href="...">RESUME_PDF</a>
         </nav>
     </header>
 
     <main>
-        <h2>Work_Experience</h2>
+        <h2>01_Systems_Research</h2>
 
-        <div class="project-entry">
-            <div class="project-sidebar">
-                <b>LANGUAGE:</b> C++20<br>
-                <b>OS:</b> Linux / Kernel<br>
-                <b>STATUS:</b> Production
+        <div class="system-entry">
+            <div class="system-meta">
+                <b>LANGUAGE</b><br>C++20 / ASM<br><br>
+                <b>PRIMITIVE</b><br>io_uring / SIMD<br><br>
+                <b>STATUS</b><br>Research_v2
             </div>
-            <div class="project-content">
-                <div class="project-title">Edge-Fabric Cache Engine</div>
-                <span class="metric">Reduced p99 Latency by 85%</span>
-                <p class="project-desc">
-                    Architected a low-level distributed cache using <code>io_uring</code> to bypass kernel syscall overhead. Focused on high-concurrency memory management and lock-free primitives.
+            <div class="system-content">
+                <div class="system-title">Edge-Fabric Distributed Cache</div>
+                <p class="system-desc">
+                    Researching zero-copy memory mapping to eliminate kernel-to-user space context switching. Implemented a lock-free hash ring that maintains 10M+ operations/sec under high contention.
                 </p>
-                <div class="tech-tags">
-                    <span class="tag">#Systems_Programming</span>
-                    <span class="tag">#High_Concurrency</span>
-                    <span class="tag">#Linux_Performance</span>
+                <div class="nav-links" style="font-size: 0.75rem;">
+                    <a href="#">Technical_Writeup &rarr;</a>
+                    <a href="#">Source_Code</a>
                 </div>
             </div>
         </div>
 
-        <div class="project-entry">
-            <div class="project-sidebar">
-                <b>LANGUAGE:</b> Python / Go<br>
-                <b>INFRA:</b> Terraform / AWS<br>
-                <b>CONTAINER:</b> Docker
+        <h2>02_Infrastructure_Automation</h2>
+
+        <div class="system-entry">
+            <div class="system-meta">
+                <b>STACK</b><br>Python / Terraform<br><br>
+                <b>TARGET</b><br>Docker / AWS<br><br>
+                <b>SCOPE</b><br>Multi-Region
             </div>
-            <div class="project-content">
-                <div class="project-title">Cloud Infrastructure Pipeline</div>
-                <span class="metric">Automated 100% Region Deployments</span>
-                <p class="project-desc">
-                    Engineered automated Infrastructure-as-Code (IaC) using Terraform and Python for managing global cluster state. Implemented verifiable deployment gates to ensure zero-drift infrastructure.
+            <div class="system-content">
+                <div class="system-title">Automated Governance Control Plane</div>
+                <p class="system-desc">
+                    Developed a Python-based wrapper for Terraform to enforce state-integrity across ephemeral testbeds. Integrated Merkle Tree-based audit logging to ensure cryptographic verification of infrastructure changes.
                 </p>
-                <div class="tech-tags">
-                    <span class="tag">#Terraform</span>
-                    <span class="tag">#Python_Automation</span>
-                    <span class="tag">#Docker</span>
+                <div class="nav-links" style="font-size: 0.75rem;">
+                    <a href="#">System_Design_Doc</a>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer style="margin-top: 8rem; padding: 4rem 0; border-top: 1px solid var(--border); font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
-        AVAILABLE FOR REMOTE ROLES // TIMEZONE: UTC+5:30 // 2026_EDITION
+    <footer style="margin-top: 8rem; border-top: 1px solid var(--border); padding: 4rem 0; font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);">
+        // UTC+5.5 // READY_FOR_GLOBAL_INTERNSHIPS // BUILT_WITH_SYSTEMS_MINDSET
     </footer>
 
 </body>
