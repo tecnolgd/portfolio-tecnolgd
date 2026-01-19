@@ -5,11 +5,9 @@
 
 ## Features ⚙️⚙️
 * Made with **HTML5** and **CSS**
-* Sleek aesthetics and feel
+* Sleek aesthetics and feel.
 * Includes links to project case studies and blog website.
-* Made for depicting tecnolgd's digital profile.
+* Made for depicting tecnolgd's skills and knowledge in the digital realm.
 
-## Future upgrades 🎯
-* Improved accessibilty.
-* Collab tab
+### **Inspired from low-level, terminal themes and the matrix.**
 
