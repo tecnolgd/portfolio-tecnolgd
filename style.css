@@ -2,7 +2,7 @@
 
 :root {
     --bg: #030303;
-    --text: #f4f4f5;
+    --text: #e3f0f4;
     --muted: #71717a;
     --accent-purple: #a855f7; 
     --accent-green: #10b981;  
@@ -19,7 +19,7 @@ body {
     color: var(--text);
     font-family: var(--font-sans);
     line-height: 1.6;
-    font-size: 18px; /* Standard elite reading size */
+    font-size: 17px; /* Standard elite reading size */
     padding: 8vh 5vw;
     -webkit-font-smoothing: antialiased;
 }
@@ -43,11 +43,11 @@ header, main {
 
 h1 {
     font-size: clamp(2.5rem, 5vw, 3.8rem); /* Big but controlled */
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.04em;
-    line-height: 1.05;
+    line-height: 1.00;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: #d2e9ea;
 }
 
 .hero-sub {
