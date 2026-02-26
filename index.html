@@ -32,17 +32,46 @@
         </div>
     </div>
 
-    <nav class="nav-links">
+    <nav class="nav-links" style="margin-bottom: 1.5rem;">
         <a href="mailto:...">EMAIL</a>
         <a href="https://github.com/tecnolgd">GITHUB</a>
         <a href="...">RESUME</a>
     </nav>
+
+    <nav class="sticky-nav">
+        <span style="color: var(--muted);">JUMP_TO:</span>
+        <a href="#core-systems">CORE_SYSTEMS</a>
+        <a href="#infrastructure">INFRASTRUCTURE</a>
+        <a href="#developer-tools">DEVELOPER_TOOLS</a>
+    </nav>
 </header>
 
 <main>
+    <div class="projects-overview">
+        <div class="overview-card" onclick="document.querySelector('details#core-systems summary').click()">
+            <div class="overview-label">01_SYSTEMS</div>
+            <div class="overview-title">TermiFlow</div>
+            <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">C++ • CLI Tool</div>
+        </div>
+        <div class="overview-card" onclick="document.querySelector('details#infrastructure summary').click()">
+            <div class="overview-label">02_ANALYSIS</div>
+            <div class="overview-title">repoScanner</div>
+            <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">Python 3.12+ • Codebase Tools</div>
+        </div>
+        <div class="overview-card" onclick="document.querySelector('details#developer-tools summary').click()">
+            <div class="overview-label">03_TOOLING</div>
+            <div class="overview-title">Code-Vault</div>
+            <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">C++17 • Static Analyzer</div>
+        </div>
+    </div>
+
     <h2>01_CORE_SYSTEMS</h2>
 
-    <div class="system-entry">
+    <details id="core-systems" open>
+        <summary>
+            <span style="font-size: 1.2rem;"> >> TermiFlow - Terminal Command Hub</span>
+        </summary>
+        <div class="system-entry">
         <div class="system-meta">
             <b>[LANG]</b> <span>C++</span><br>
             <b>[ARCH]</b> <span>Modular CLI</span><br>
@@ -61,10 +90,15 @@
                 <a href="https://github.com/tecnolgd/TermiFlow">SOURCE</a>
             </div>
         </div>
-    </div>
+        </div>
+    </details>
 
 <h2>02_INFRASTRUCTURE_ANALYSIS</h2>
 
+    <details id="infrastructure">
+        <summary>
+            <span style="font-size: 1.2rem;"> >> repoScanner - Codebase Intelligence Tool</span>
+        </summary>
         <div class="system-entry">
             <div class="system-meta">
                 <b>LANG</b><br>Python 3.12+<br><br>
@@ -82,26 +116,32 @@
                 </div>
             </div>
         </div>
+    </details>
 
     <h2 style="margin-top: 4rem;">03_DEVELOPER_TOOLING</h2>
 
-    <div class="system-entry">
-        <div class="system-meta">
-            <b>[LANG]</b> <span>C++17 / OOP</span><br>
-            <b>[PARADIGM]</b> <span>File Analysis</span><br>
-            <b>[INTERFACE]</b> <span>CLI</span>
-        </div>
-        <div class="system-content">
-            <div class="system-title">Code-Vault - Static Code Analyzer</div>
-            <div class="metric-badge">RESULT: DETAILED CODE INSIGHTS</div>
-            <p class="system-desc">
-                Terminal-based static analyzer for rapid code intelligence. Dual-mode interface (interactive & CLI) with file property analysis, basic-to-intermediate algorithms, and comprehensive documentation. Generates structured analysis reports.
-            </p>
-            <div class="nav-links" style="font-size: 0.75rem;">
-                <a href="https://github.com/tecnolgd/Code-Vault">SOURCE</a>
+    <details id="developer-tools">
+        <summary>
+            <span style="font-size: 1.2rem;"> </span> >> Code-Vault - Static Code Analyzer</span>
+        </summary>
+        <div class="system-entry">
+            <div class="system-meta">
+                <b>[LANG]</b> <span>C++17 / OOP</span><br>
+                <b>[PARADIGM]</b> <span>File Analysis</span><br>
+                <b>[INTERFACE]</b> <span>CLI</span>
+            </div>
+            <div class="system-content">
+                <div class="system-title">Code-Vault - Static Code Analyzer</div>
+                <div class="metric-badge">RESULT: DETAILED CODE INSIGHTS</div>
+                <p class="system-desc">
+                    Terminal-based static analyzer for rapid code intelligence. Dual-mode interface (interactive & CLI) with file property analysis, basic-to-intermediate algorithms, and comprehensive documentation. Generates structured analysis reports.
+                </p>
+                <div class="nav-links" style="font-size: 0.75rem;">
+                    <a href="https://github.com/tecnolgd/Code-Vault">SOURCE</a>
+                </div>
             </div>
         </div>
-    </div>
+    </details>
 </main>
 
 <footer style="margin-top: 8rem; border-top: 1px solid var(--border); padding: 4rem 0;">
