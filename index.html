@@ -11,32 +11,34 @@
 <body>
 
     <header>
-    <div class="namespace">
-        SYSTEMS_BACKEND // <span class="status-online">ONLINE</span>
-    </div>
+    <nav class="top-nav">
+        <a href="https://github.com/tecnolgd">GITHUB</a>
+        <a href="mailto:your-email@example.com">EMAIL</a>
+        <a href="#">RESUME</a>
+        <span class="nav-divider">•</span>
+        <span class="status-label"><span class="status-online">ONLINE</span> • UTC+5.5</span>
+    </nav>
     
     <h1>tecnolgd</h1>
     
-    <p style="font-size: 1.3rem; color: var(--muted); margin-bottom: 3rem; max-width: 700px;">
-        Undergrad engineer focused on <b style="color: var(--text);">Systems, Backend Infrastructure, and Developer tools</b>. Building performant, scalable tools. Seeking Summer 2026 internships.
+    <p style="font-size: 1.2rem; color: var(--muted); margin-bottom: 2rem; max-width: 750px; line-height: 1.6;">
+        Systems & infrastructure engineer. Building <b style="color: var(--text);">high-performance tools, backend systems, and developer infrastructure</b>. C++ • Python • Systems Design.
     </p>
 
     <div class="hero-stats">
         <div class="stat-item">
-            <span class="stat-label">p99_LATENCY</span>
-            <span class="stat-value">18.42ms</span>
+            <span class="stat-label">SPECIALIZATION</span>
+            <span class="stat-value">Systems / Infra</span>
         </div>
         <div class="stat-item">
-            <span class="stat-label">THROUGHPUT</span>
-            <span class="stat-value">48k_req/s</span>
+            <span class="stat-label">CORE</span>
+            <span class="stat-value">DevTools • Performance</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">MODE</span>
+            <span class="stat-value">Deep Work • Remote</span>
         </div>
     </div>
-
-    <nav class="nav-links" style="margin-bottom: 1.5rem;">
-        <a href="mailto:...">EMAIL</a>
-        <a href="https://github.com/tecnolgd">GITHUB</a>
-        <a href="...">RESUME</a>
-    </nav>
 
     <nav class="sticky-nav">
         <span style="color: var(--muted);">JUMP_TO:</span>
@@ -69,7 +71,7 @@
 
     <details id="core-systems" open>
         <summary>
-            <span style="font-size: 1.2rem;"> >> velocache - High Perf. cache implementation</span>
+            <span style="font-size: 1.2rem;"> <> velocache - High Perf. cache implementation</span>
         </summary>
         <div class="system-entry">
         <div class="system-meta">
@@ -83,8 +85,7 @@
             <div class="system-title">velocache - High Perf. cache implementation</div>
             <div class="metric-badge">RESULT: LRU eviction based cache</div>
             <p class="system-desc">
-                High Performance cache implemetation using doubly linked-list and unordered map. Cache data storage and retrieval works on O(1) lookup time with data hydration for new sessions via persistent file-based data storage. Uses smart file arrangement(tail to head) for robust and clean eviction and updation of the cache data order.
-                
+                O(1) cache with LRU eviction using linked-lists + hash maps. Demonstrates core systems knowledge: memory discipline, data structure design, persistence patterns. Production-grade implementation.
             </p>
             <div class="nav-links" style="font-size: 0.75rem;">
                 <a href="https://github.com/tecnolgd/velocache">SOURCE</a>
@@ -97,7 +98,7 @@
 
     <details id="infrastructure">
         <summary>
-            <span style="font-size: 1.2rem;"> >> repoScanner - Codebase Intelligence Tool</span>
+            <span style="font-size: 1.2rem;"> <> repoScanner - Codebase Intelligence Tool</span>
         </summary>
         <div class="system-entry">
             <div class="system-meta">
@@ -109,7 +110,7 @@
                 <div class="system-title">repoScanner - Codebase Intelligence Tool</div>
                 <div class="metric-badge">RESULT: INSTANT REPO INSIGHTS</div>
                 <p class="system-desc">
-                    Lightweight CLI tool for rapid codebase analysis. Extracts dependencies, calculates LOC metrics, maps language distribution, and generates JSON reports. Dual-mode reporting for both high-level summaries and detailed developer analysis.
+                    Fast codebase intelligence tool. Extracts deps, LOC metrics, language distro. Dual-mode output (executive summaries + detailed analysis). Powers rapid onboarding, audits, and repo intelligence. Performance-optimized for large codebases.
                 </p>
                 <div class="nav-links" style="font-size: 0.75rem;">
                     <a href="https://github.com/tecnolgd/repoScanner">SOURCE</a>
@@ -123,7 +124,7 @@
 
     <details id="developer-tools">
         <summary>
-            <span style="font-size: 1.2rem;"> </span> >> TermiFlow = Terminal Command Hub</span>
+            <span style="font-size: 1.2rem;"> </span> <> TermiFlow = Terminal Command Hub</span>
         </summary>
         <div class="system-entry">
             <div class="system-meta">
@@ -135,8 +136,7 @@
                 <div class="system-title">TermiFlow - Terminal Command Hub</div>
             <div class="metric-badge">RESULT: KEYBOARD-CENTRIC AUTOMATION</div>
             <p class="system-desc">
-                Command-driven terminal launcher for rapid application execution and automation. Features modular architecture with command handler, custom shortcuts, theme management, command history, and system stats tracking.
-                
+                Terminal command hub. Modular architecture with custom shortcuts, command handler, theme management. Designed for deep work density—keyboard-first, low-friction interface. Extensible plugin system.
             </p>
             <div class="nav-links" style="font-size: 0.75rem;">
                 <a href="https://github.com/tecnolgd/TermiFlow">SOURCE</a>
@@ -160,7 +160,7 @@
                 <div class="system-title">Code-Vault - Static Code Analyzer</div>
                 <div class="metric-badge">RESULT: DETAILED CODE INSIGHTS</div>
                 <p class="system-desc">
-                    Terminal-based static analyzer for rapid code intelligence. Dual-mode interface (interactive & CLI) with file property analysis, basic-to-intermediate algorithms, and comprehensive documentation. Generates structured analysis reports.
+                    Static code analyzer. Dual-mode (TUI + CLI). Deep file property analysis, algorithm pattern recognition, code quality metrics. Built for rapid code reviews and structural understanding of complex systems.
                 </p>
                 <div class="nav-links" style="font-size: 0.75rem;">
                     <a href="https://github.com/tecnolgd/Code-Vault">SOURCE</a>
@@ -170,8 +170,9 @@
     </details>
 </main>
 
-<footer style="margin-top: 8rem; border-top: 1px solid var(--border); padding: 4rem 0;">
-    LOOKING_FORWARD_FOR_GLOBAL_INTERNSHIPS // UTC+5.5 // BUILT_WITH_MINIMALISM
+<footer style="margin-top: 8rem; padding: 4rem 0; border-top: 1px solid var(--border); color: var(--muted); font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.05em;">
+    <p style="margin-bottom: 1.5rem;">Open to remote internships, contracts, and full-time roles. Deep work on systems.</p>
+    <p style="color: var(--muted); font-size: 0.7rem;">UTC+5.5 • Async-first • Focused on performance-critical work</p>
 </footer>
 
 </body>
