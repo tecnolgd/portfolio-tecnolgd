@@ -50,7 +50,7 @@
     <div class="projects-overview">
         <div class="overview-card" onclick="document.querySelector('details#core-systems summary').click()">
             <div class="overview-label">01_SYSTEMS</div>
-            <div class="overview-title">Velocache</div>
+            <div class="overview-title">velocache</div>
             <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">C++ • Cache</div>
         </div>
         <div class="overview-card" onclick="document.querySelector('details#infrastructure summary').click()">
@@ -69,7 +69,7 @@
 
     <details id="core-systems" open>
         <summary>
-            <span style="font-size: 1.2rem;"> >> Velcocache - High Perf. cache implementation</span>
+            <span style="font-size: 1.2rem;"> >> velocache - High Perf. cache implementation</span>
         </summary>
         <div class="system-entry">
         <div class="system-meta">
@@ -78,16 +78,16 @@
             <b>[STATUS]</b> <span>v0.1.0-beta</span>
             
         </div>
-        <div class="system-content">
+        <div class="system-content"> 
             
-            <div class="system-title">Velocache - High Perf. cache implementation</div>
+            <div class="system-title">velocache - High Perf. cache implementation</div>
             <div class="metric-badge">RESULT: LRU eviction based cache</div>
             <p class="system-desc">
-                High Performance cache implemetation using doubly linked-list and hash-maps. Cache data storage and retrieval works on O(1) lookup time with data hydration for new sessions via persistent file-based data storage.
+                High Performance cache implemetation using doubly linked-list and unordered map. Cache data storage and retrieval works on O(1) lookup time with data hydration for new sessions via persistent file-based data storage. Uses smart file arrangement(tail to head) for robust and clean eviction and updation of the cache data order.
                 
             </p>
             <div class="nav-links" style="font-size: 0.75rem;">
-                <a href="https://github.com/tecnolgd/Velocache">SOURCE</a>
+                <a href="https://github.com/tecnolgd/velocache">SOURCE</a>
             </div>
         </div>
         </div>
