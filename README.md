@@ -10,4 +10,3 @@
 * Made for depicting tecnolgd's skills and knowledge in the digital realm.
 
 ### **Inspired from low-level, terminal themes and the matrix.**
-
