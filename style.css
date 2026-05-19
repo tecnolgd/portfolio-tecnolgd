@@ -481,3 +481,105 @@ footer a {
 footer a:hover {
     color: var(--accent-secondary);
 }
+
+/* --- THEME TOGGLE ENGINE --- */
+
+/* 1. Theme Variable Inversion */
+body:has(.theme-switch-input:checked) {
+    --bg: #f9f9fb;
+    --text: #111118;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --accent-purple: #7c3aed; /* Adjusted for light background visibility */
+    --accent-green: #059669;  /* Adjusted for contrast */
+}
+
+/* 2. Layout & Mechanics */
+.theme-toggle-wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.theme-switch-input {
+    display: none; /* Completely hidden from view */
+}
+
+.theme-switch-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: transparent;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.theme-switch-label:hover {
+    border-color: var(--accent-purple);
+    background: rgba(168, 85, 247, 0.05);
+}
+
+/* 3. Pure CSS Icon State Engine */
+.dynamic-glyph::before {
+    content: "⬢"; /* Dual Diamond/Hex Node variant for Dark Mode */
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-green);
+}
+
+.theme-switch-input:checked + .theme-switch-label .dynamic-glyph::before {
+    content: "⬡"; /* Hollow Hex Node variant for Light Mode */
+    color: var(--accent-purple);
+}
+
+/* Smooth color transitions for systemic layout changes */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+/* Top Navigation Layout Rules */
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    margin-bottom: 3rem;
+}
+
+/* Fixes the GitHub, Email, and Resume link visibility */
+.top-nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover {
+    color: var(--accent-blue);
+}
+
+/* Fixes the "ONLINE • UTC+5.5" string contrast */
+.status-label {
+    color: var(--muted);
+}
+
+/* Fixes the dot divider color */
+.nav-divider {
+    color: var(--border);
+}
+
+/* Clean up details summary arrow elements */
+summary {
+    color: var(--text);
+    cursor: pointer;
+    font-family: var(--font-mono);
+    padding: 0.5rem 0;
+}
+
+summary:hover {
+    color: var(--accent-purple);
+}
