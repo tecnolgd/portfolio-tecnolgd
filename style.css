@@ -330,7 +330,6 @@ details .system-content {
     border: 1px solid var(--border);
     border-radius: 6px;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
 }
 
 .overview-card:hover {
@@ -350,6 +349,11 @@ details .system-content {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text);
+}
+
+/*Pointer effects for project detail dropdowns*/
+.project-details{
+    cursor: pointer;
 }
 
 /* ==========================================================================
