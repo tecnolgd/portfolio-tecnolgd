@@ -62,13 +62,13 @@ header, main {
 }
 
 h1 {
-    font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+    font-size: 2.8rem; 
     font-weight: 700;
     letter-spacing: -0.03em;
-    line-height: 1.1;
-    margin-bottom: 2rem;
+    line-height: 1.15;
     color: var(--text);
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .hero-sub {
@@ -120,12 +120,20 @@ b, strong, .system-title {
     border-bottom-color: var(--accent-primary);
 }
 
-.nav-divider { color: var(--border); }
-.status-label { color: var(--muted); font-weight: 400; }
-.status-online { color: var(--accent-secondary); font-weight: 700; display: inline-block; }
+.nav-divider { 
+    color: var(--border); 
+}
+.status-label { 
+    color: var(--muted); font-weight: 400; 
+}
+.status-online { 
+    color: var(--accent-secondary); font-weight: 700; display: inline-block; 
+}
 
 /* The Right-Pinned Minimalist Switch Framework */
-.theme-toggle-wrapper { display: flex; align-items: center; }
+.theme-toggle-wrapper { 
+    display: flex; align-items: center; 
+}
 
 .theme-switch-input {
     display: none !important;
@@ -146,7 +154,9 @@ b, strong, .system-title {
     transition: opacity 0.2s ease;
 }
 
-.theme-switch-label:hover { opacity: 0.8; }
+.theme-switch-label:hover { 
+    opacity: 0.8; 
+}
 
 .theme-text-glyph::before {
     content: "[MODE: DARK]";
@@ -360,20 +370,40 @@ details .system-content {
    6. RESPONSIVE MEDIA QUERIES (MOBILE BREAKS)
    ========================================================================== */
 @media (max-width: 900px) {
-    body { padding: 3vh 5vw 4vh 5vw; font-size: 15px; }
-    h1 { font-size: clamp(1.6rem, 3vw, 2.5rem); }
+    body { 
+    padding: 3vh 5vw 4vh 5vw; font-size: 15px;  
+
+    }
+    h1 { 
+        font-size: clamp(1.6rem, 3vw, 2.5rem); 
+    }
     
-    .system-entry { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2rem; }
-    .system-meta { border-right: none; border-bottom: 1px solid var(--border); padding: 0 0 1.5rem 0; margin-bottom: 0; }
-    .hero-stats { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem; }
-    .stat-value { font-size: 1.2rem; }
-    details { padding: 0 1rem; }
-    .projects-overview { grid-template-columns: 1fr; gap: 1rem; }
+    .system-entry { 
+        grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2rem; 
+    }
+    .system-meta { 
+        border-right: none; border-bottom: 1px solid var(--border); padding: 0 0 1.5rem 0; margin-bottom: 0; 
+    }
+    .hero-stats { 
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 2rem; 
+    }
+    .stat-value {
+        font-size: 1.2rem; 
+    }
+    details { 
+        padding: 0 1rem;
+    }
+    .projects-overview {    grid-template-columns: 1fr; gap: 1rem; 
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-3px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { 
+        opacity: 0; transform: translateY(-3px); 
+    }
+    to { 
+        opacity: 1; transform: translateY(0); 
+    }
 }
 
 footer {
