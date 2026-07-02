@@ -8,6 +8,6 @@
 * Made with **HTML5** and **CSS**
 * Sleek aesthetics and minimalism
 * Minimal load-time and effects
-* Includes links to relevant source code and docs
+* Includes links to relevant source code and docs          
 
-Inspired by low-level computing themes and dark fantasy**
+Inspired by low-level computing themes and dark fantasy
