@@ -1,116 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
-/* ==========================================================================
-   1. CORE VARIABLES & NATIVE TOGGLE ENGINE
-   ========================================================================== */
 :root {
     --bg: #0a0a0a;
     --text: #f2f2f2;
     --muted: #8b8b8b;
     --border: #252525;
-    
-    --accent-primary: #3b82f6;   /* Engineering Blue */
-    --accent-secondary: #10b981; /* System Green */
-    
-    --font-mono: 'JetBrains Mono', monospace;
-    --font-sans: 'Inter', sans-serif;
+    --accent: #3b82f6;     /* Blue */
+    --accent-sec: #10b981; /* Green */
 }
 
-body:has(.theme-switch-input:checked) {
-    --bg: #f9f9fb;
-    --text: #0f172a;
-    --muted: #475569;
-    --border: #e2e8f0;
-    
-    --accent-primary: #1d4ed8;
-    --accent-secondary: #047857;
-}
-
-/* ==========================================================================
-   2. GLOBAL DOCUMENT PRIMITIVES & AUTOMATIC RESPONSIVENESS
-   ========================================================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: var(--font-sans);
+    font-family: 'Inter', sans-serif;
     line-height: 1.65;
-    max-width: 850px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 4vh 5vw;
     -webkit-font-smoothing: antialiased;
-    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* TYPOGRAPHY BINDINGS FOR NATIVE MARKDOWN OVERRIDES */
-h1, h2, h3, strong { color: var(--text); font-weight: 700; margin-bottom: 1rem; }
-h1 { font-size: 2.5rem; letter-spacing: -0.03em; margin-top: 2rem; }
-h2 { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-primary); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-h3 { font-size: 1.25rem; margin-top: 2rem; color: var(--text); }
-p { color: var(--muted); margin-bottom: 1rem; }
+/* Base Typographic Hierarchy */
+h1, h2, h3 { color: var(--text); font-weight: 700; }
+h1 { font-size: 2.5rem; letter-spacing: -0.03em; margin: 2rem 0; }
+h2 { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin: 4rem 0 1.5rem 0; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; margin-top: 2.5rem; margin-bottom: 0.25rem; }
+p { color: var(--muted); margin-bottom: 1.5rem; }
 
-/* INLINE ELEMENTS & CODE METRICS */
-a { color: var(--accent-secondary); text-decoration: none; font-weight: 600; }
-a:hover { text-decoration: underline; }
-code { font-family: var(--font-mono); background: rgba(128, 128, 128, 0.1); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; color: var(--text); }
-ul { margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--muted); }
-li { margin-bottom: 0.5rem; }
+/* Custom Formatting for Markdown Content Primitives */
+a { color: var(--accent-sec); text-decoration: none; font-weight: 600; }
+code { font-family: 'JetBrains Mono', monospace; background: rgba(255, 255, 255, 0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.85em; color: var(--text); }
 hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
 
-/* ==========================================================================
-   3. NATIVE SWITCH ACCENTS & TOP NAV FRAMEWORK
-   ========================================================================== */
-.top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 3rem;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-}
-
-.nav-left { display: flex; align-items: center; gap: 1.3rem; }
-.top-nav a { color: var(--muted); padding: 0.5rem 0; font-weight: 600; }
-.top-nav a:hover { color: var(--accent-primary); }
-.nav-divider { color: var(--border); }
-.status-online { color: var(--accent-secondary); font-weight: 700; }
-
-.theme-switch-input { display: none !important; }
-.theme-switch-label { cursor: pointer; font-family: var(--font-mono); font-weight: 600; }
-.theme-text-glyph::before { content: "[MODE: DARK]"; color: var(--accent-secondary); }
-body:has(.theme-switch-input:checked) .theme-text-glyph::before { content: "[MODE: LIGHT]"; color: var(--accent-primary); }
-
-/* Add these structural utilities to style.css */
-
-.project-block {
-    margin-bottom: 3.5rem;
-}
-
-/* Ensure the main repository link headers match text color and don't underline on hover */
-h3 a {
-    color: var(--text) !important;
-    text-decoration: none;
-}
-h3 a:hover {
-    color: var(--accent-primary) !important;
-}
-
-/* Color target selectors for metadata labels in markdown bold tags */
-.project-block strong {
-    color: var(--accent-primary);
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
+/* Captures the **[LANG]** markers inside your project specs row automatically */
+h3 + p strong {
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
-/* Muted styling for the secondary metric bar */
-.project-block p:first-of-type {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    margin-top: 0.25rem;
-    margin-bottom: 0.75rem;
+/* Captures the primary spec row text container */
+h3 + p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
 }
