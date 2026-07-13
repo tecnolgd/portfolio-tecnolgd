@@ -28,3 +28,15 @@ In-memory key-value store utilizing a linked-list backed hash map structure. Eng
 `ENGINE: DEPENDENCY PARSER`
 
 Static repository parser engineered to map dependency matrices, extract abstract syntax trees, and isolate multi-language metrics. Optimized for memory-bounded execution over massive, multi-gigabyte trees.
+
+## 03_DEVELOPER_TOOLS
+
+### ◇ [TermiFlow](https://github.com/tecnolgd/TermiFlow)
+**[LANG]** `C++17` — **[PARADIGM]** `Event-Driven` — **[INTERFACE]** `POSIX CLI`
+
+Keyboard-centric CLI command dispatcher built with an asynchronous architecture. Features isolated runtime shortcuts, modular plugin hook environments, and low-latency process invocation metrics.
+
+### ◇ [CodeVault](https://github.com/tecnolgd/Code-Vault)
+**[LANG]** `C++17` — **[PARADIGM]** `Static Analysis` — **[INTERFACE]** `TUI / CLI`
+
+Static structural parsing engine that provides immediate terminal profiles of code primitives. Operates natively on files to generate telemetry maps used for structural audits and architectural linting.
