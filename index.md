@@ -1,8 +1,3 @@
----
-layout: default
-title: portfolio-tecnolgd
----
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
 Systems & infrastructure engineer. Building **high-performance tools, backend systems, and distributed infrastructure**. `C++` • `Python` • `Developer Tools`
 
