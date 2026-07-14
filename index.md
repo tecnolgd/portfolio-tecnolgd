@@ -1,6 +1,4 @@
 
-# tecnolgd
-
 Systems & infrastructure engineer. Building **high-performance tools, backend systems, and distributed infrastructure**. `C++` • `Python` • `Developer Tools`
 
 <div align = center>
