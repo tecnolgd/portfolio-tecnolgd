@@ -5,14 +5,17 @@ title: tecnolgd | Systems Developer
 
 # tecnolgd
 
-Systems & infrastructure engineer. Building **high-performance tools, backend systems, and distributed infrastructure**. `C++` • `Python` • `Systems Design`
+Systems & infrastructure engineer. Building **high-performance tools, backend systems, and distributed infrastructure**. `C++` • `Python` • `Developer Tools`
 
-<div align =center><code><b>SPEC: </b>Systems/Infra | <b>CORE:</b> DevTools • Performance | <b>MODE:</b> Deep Work • Remote</code>
+<div align = center>
+    <a href = "https://github.com/tecnolgd">GitHub</a> |
+    <a href = "https://tecnolgd.github.io/blog-tecnolgd">Blog</a>  
 </div>
 
----
 
-## 01_CORE_SYSTEMS
+## Projects
+
+### 01_CORE_SYSTEMS
 
 ### ◇ [velocache](https://github.com/tecnolgd/velocache)
 **[LANG]** `C++17` |  **[DS]** `DLL / Hashmap` |  **[STATUS]** `v0.2.0-beta`
@@ -21,7 +24,7 @@ Systems & infrastructure engineer. Building **high-performance tools, backend sy
 In-memory key-value store utilizing a linked-list backed hash map structure. Engineered for deterministic $O(1)$ operations, explicit pointer discipline, and customized persistence layout patterns.
 
 
-## 02_INFRASTRUCTURE_ANALYSIS
+### 02_INFRASTRUCTURE_ANALYSIS
 
 ### ◇ [repoScanner](https://github.com/tecnolgd/repoScanner)
 **[LANG]** `Python 3.12` — **[TARGET]** `AST Analysis` — **[SCOPE]** `Multi-Language`
@@ -29,7 +32,7 @@ In-memory key-value store utilizing a linked-list backed hash map structure. Eng
 
 Static repository parser engineered to map dependency matrices, extract abstract syntax trees, and isolate multi-language metrics. Optimized for memory-bounded execution over massive, multi-gigabyte trees.
 
-## 03_DEVELOPER_TOOLS
+### 03_DEVELOPER_TOOLS
 
 ### ◇ [TermiFlow](https://github.com/tecnolgd/TermiFlow)
 **[LANG]** `C++17` — **[PARADIGM]** `Event-Driven` — **[INTERFACE]** `POSIX CLI`
