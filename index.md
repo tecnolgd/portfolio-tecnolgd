@@ -7,34 +7,33 @@ Systems & infrastructure engineer. Building **high-performance tools, backend sy
 </div>
 
 
-## Projects
 
-### 01_CORE_SYSTEMS
+### 1. Core Systems
 
-### ◇ [velocache](https://github.com/tecnolgd/velocache)
-`C++17` • `DLL / Hashmap` • `LRU Eviction`
+- [velocache](https://github.com/tecnolgd/velocache)     
+*C++17 • DLL / Hashmap • LRU Eviction*
 
-In-memory key-value store utilizing a linked-list backed hash map structure. Engineered for deterministic $O(1)$ operations, explicit pointer discipline, and customized persistence layout patterns.
+    In-memory key-value store utilizing a linked-list backed hash map structure. Engineered for deterministic $O(1)$ operations, explicit pointer discipline, and customized persistence layout patterns.
 
 
-### 02_INFRASTRUCTURE_ANALYSIS
+### 2. Infrastructure Analysis
 
-### ◇ [repoScanner](https://github.com/tecnolgd/repoScanner)
-`Python 3.12` • `AST Analysis` • `Multi-Language` • `Dependency Parser`
+- [repoScanner](https://github.com/tecnolgd/repoScanner)     
+*Python 3.12 • AST Analysis • Multi-Language • Dependency Parser*
 
-Static repository parser engineered to map dependency matrices, extract abstract syntax trees, and isolate multi-language metrics. Optimized for memory-bounded execution over massive, multi-gigabyte trees.
+    Static repository parser engineered to map dependency matrices, extract abstract syntax trees, and isolate multi-language metrics. Optimized for memory-bounded execution over massive, multi-gigabyte trees.
 
-### 03_DEVELOPER_TOOLS
+### 3. Developer Tools
 
-### ◇ [TermiFlow](https://github.com/tecnolgd/TermiFlow)
-`C++17` • `Event-Driven` • `POSIX CLI`
+- [TermiFlow](https://github.com/tecnolgd/TermiFlow)    
+*C++17 • Event-Driven • POSIX CLI*    
 
-Keyboard-centric CLI command dispatcher built with an asynchronous architecture. Features isolated runtime shortcuts, modular plugin hook environments, and low-latency process invocation metrics.
+    Keyboard-centric CLI command dispatcher built with an asynchronous architecture. Features isolated runtime shortcuts, modular plugin hook environments, and low-latency process invocation metrics.
 
-### ◇ [CodeVault](https://github.com/tecnolgd/Code-Vault)
-`C++17` • `Static Analysis` • `TUI / CLI`
+- [CodeVault](https://github.com/tecnolgd/Code-Vault)     
+*C++17 • Static Analysis • TUI / CLI*     
 
-Static structural parsing engine that provides immediate terminal profiles of code primitives. Operates natively on files to generate telemetry maps used for structural audits and architectural linting.
+    Static structural parsing engine that provides immediate terminal profiles of code primitives. Operates natively on files to generate telemetry maps used for structural audits and architectural linting.
 
 
 ---
