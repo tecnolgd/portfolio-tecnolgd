@@ -1,2 +1,4 @@
-markdown: kramdown
-permalink: /:title/
+remote_theme: jekyll/minima
+
+minima:
+  skin: dark
