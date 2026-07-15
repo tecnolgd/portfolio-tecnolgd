@@ -3,7 +3,7 @@ Systems & infrastructure engineer. Building **high-performance tools, backend sy
 
 <div align = center>
     <a href = "https://github.com/tecnolgd">GitHub</a> |
-    <a href = "https://tecnolgd.github.io/blog-tecnolgd">Blog</a>  
+    <a href = "mailto:tecnolgd@proton.me">Email</a>  
 </div>
 
 
