@@ -2,9 +2,3 @@ remote_theme: jekyll/minima
 
 minima:
   skin: dark
-
-# To include custom favicon
-plugins:
-  - jekyll-seo-tag
-
-site_favicon: /favicon.svg
