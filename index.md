@@ -30,10 +30,10 @@ Systems & infrastructure engineer. Building **high-performance tools, backend sy
 
     Keyboard-centric CLI command dispatcher built with an asynchronous architecture. Features isolated runtime shortcuts, modular plugin hook environments, and low-latency process invocation metrics.
 
-- [CodeVault](https://github.com/tecnolgd/Code-Vault)     
-*C++17 • Static Analysis • TUI / CLI*     
+- [libcvault](https://github.com/tecnolgd/libcvault)     
+*C++17 • Static Analysis • Library*     
 
-    Static structural parsing engine that provides immediate terminal profiles of code primitives. Operates natively on files to generate telemetry maps used for structural audits and architectural linting.
+    A C++ library for static file metadata analysis. It is intended to provide reusable functions for another C++ program(as of now) rather than operate as a standalone executable.
 
 
 ---
