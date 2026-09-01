@@ -16,15 +16,15 @@ In-memory key-value store using a linked-list backed hash map structure. Built w
 [Source Code](https://github.com/tecnolgd/velocache) • [Docker](https://hub.docker.com/r/tecnolgd/velocache)
 
 ### repoScanner
-*Python 3.12 • C++ Engine Integration • AST Analysis • PyPI Package*
+*Python 3.12 • C++ Engine Integration • Static Analysis • PyPI Package*
 
-High-performance repository parser designed to extract abstract syntax trees and parse code dependencies over large codebases. Wraps a native C++ engine (`libcvault`) into a single `pip install` workflow.
+Lightweight CLI tool for code metrics, dependency extraction, and file sorting. Uses Python standard library by default with optional C++ native acceleration (`libcvault`).
 
 [PyPI Package](https://pypi.org/tecnolgd/project/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
 
 ### TermiFlow
-*C++17 • Asynchronous Event Dispatcher • POSIX CLI*  
-Keyboard-centric CLI command runner built for high-speed terminal productivity. Features modular plugin hooks and low-latency process execution.  
+*C++17 • Cross-Platform CLI launcher • System Automation*  
+Command-driven terminal launcher and productivity suite built to execute shortcuts, track command history, and display system metrics without leaving the shell.
 
 [Source Code](https://github.com/tecnolgd/TermiFlow)
 
@@ -34,6 +34,6 @@ Keyboard-centric CLI command runner built for high-speed terminal productivity. 
 
 ### libcvault
 *C++17 • Static Analysis Library*  
-Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native backend engine for `repoScanner`.  
+Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
 
 [Source Code](https://github.com/tecnolgd/libcvault)
