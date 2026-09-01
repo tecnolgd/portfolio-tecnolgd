@@ -2,7 +2,7 @@
 
 Systems & Developer Tools Engineer building high-performance C++ utilities, static analysis engines, and CLI workflows.
 
-[GitHub](https://github.com/tecnolgd) • [Blog](https://tecnolgd.github.io/blog-tecnolgd/) • [Email](mailto:tecnolgd@proton.me)
+[GitHub](https://github.com/tecnolgd) • [Blog](https://tecnolgd.github.io/blog-tecnolgd/) • [Email](mailto:tecnolgd@proton.me) • [GPG Key](https://github.com/tecnolgd.gpg) 
 
 ---
 
