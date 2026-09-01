@@ -30,10 +30,19 @@ Command-driven terminal launcher and productivity suite built to execute shortcu
 
 ---
 
+## Open Source Contributions
+
+###  [OutSquareCapital/pyochain](https://github.com/OutSquareCapital/pyochain)
+*Python • Rust • Pyo3 • Functional Programming*
+
+[Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd)
+
+---
+
 ## Core Libraries
 
 ### libcvault
-*C++17 • Static Analysis Library*  
+*C++17 • Static Analysis Library • FFI-Compatible**  
 Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
 
 [Source Code](https://github.com/tecnolgd/libcvault)
