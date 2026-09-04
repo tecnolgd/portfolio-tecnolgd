@@ -1,4 +1,3 @@
-# tecnolgd
 
 Systems & Developer Tools Engineer building high-performance C++ utilities, static analysis engines, and CLI workflows.
 
@@ -6,48 +5,52 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
 ---
 
-## Featured Projects
+## Featured Projects       
 
-### velocache
-*C++17 • Hashmap / DLL • Deterministic $O(1)$ Operations* 
+- **velocache**
 
-In-memory key-value store using a linked-list backed hash map structure. Built with explicit memory management, deterministic LRU eviction, and custom persistence layouts.  
+    *C++17 • Hashmap / DLL • Deterministic $O(1)$ Operations* 
 
-[Source Code](https://github.com/tecnolgd/velocache) • [Docker](https://hub.docker.com/r/tecnolgd/velocache)
+    In-memory key-value store using a linked-list backed hash map structure. Built with explicit memory management, deterministic LRU eviction, and custom persistence layouts.  
 
-### repoScanner
-*Python 3.12 • C++ Engine Integration • Static Analysis • PyPI Package*
+    [Source Code](https://github.com/tecnolgd/velocache) • [Docker](https://hub.docker.com/r/tecnolgd/velocache)     
 
-Lightweight CLI tool for code metrics, dependency extraction, and file sorting. Uses Python standard library by default with optional C++ native acceleration (`libcvault`).
+- **repoScanner**   
+    *Python 3.12 • C++ Engine Integration • Static Analysis • PyPI Package*
 
-[PyPI Package](https://pypi.org/tecnolgd/project/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
+    Lightweight CLI tool for code metrics, dependency extraction, and file sorting. Uses Python standard library by default with optional C++ native acceleration (`libcvault`).
 
-### TermiFlow
-*C++17 • Cross-Platform CLI launcher • System Automation*  
-Command-driven terminal launcher and productivity suite built to execute shortcuts, track command history, and display system metrics without leaving the shell.
+    [PyPI Package](https://pypi.org/tecnolgd/project/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
 
-[Source Code](https://github.com/tecnolgd/TermiFlow)
+- **TermiFlow**
 
----
+    *C++17 • Cross-Platform CLI launcher • System Automation*
 
-## Open Source Contributions
+    Command-driven terminal launcher and productivity suite built to execute shortcuts, track command history, and display system metrics without leaving the shell.
 
-###  [OutSquareCapital/pyochain](https://github.com/OutSquareCapital/pyochain)
-*Python • Rust • Pyo3 • Functional Programming*
-
-[Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
-
-### [qualcomm/eld](https://github.com/qualcomm/eld)
-*embedded • embedded-systems*
-
-[Merged PRs](https://github.com/qualcomm/eld/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+    [Source Code](https://github.com/tecnolgd/TermiFlow)
 
 ---
 
-## Core Libraries
+## Open Source Contributions       
 
-### libcvault
-*C++17 • Static Analysis Library • FFI-Compatible**  
-Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
+- [**OutSquareCapital/pyochain**](https://github.com/OutSquareCapital/pyochain)
+    *Python • Rust • Pyo3 • Functional Programming*
 
-[Source Code](https://github.com/tecnolgd/libcvault)
+    [Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)          
+
+- [**qualcomm/eld**](https://github.com/qualcomm/eld)
+    *embedded • embedded-systems*
+
+    [Merged PRs](https://github.com/qualcomm/eld/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+
+---
+
+## Core Libraries       
+
+- **libcvault**
+    *C++17 • Static Analysis Library • FFI-Compatible**  
+
+    Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
+
+    [Source Code](https://github.com/tecnolgd/libcvault)
