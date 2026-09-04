@@ -1,5 +1,3 @@
-# tecnolgd
-
 Systems & Developer Tools Engineer building high-performance C++ utilities, static analysis engines, and CLI workflows.
 
 <div align = "center">
