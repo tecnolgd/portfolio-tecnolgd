@@ -1,40 +1,53 @@
+# tecnolgd
 
-Systems & infrastructure engineer. Building **high-performance tools, backend systems, and distributed infrastructure**. `C++` • `Python` • `Developer Tools`
+Systems & Developer Tools Engineer building high-performance C++ utilities, static analysis engines, and CLI workflows.
 
-<div align = center>
-    <a href = "https://github.com/tecnolgd">GitHub</a> |
-    <a href = "mailto:tecnolgd@proton.me">Email</a>  
-</div>
-
-
-
-### 1. Core Systems
-
-- [velocache](https://github.com/tecnolgd/velocache)     
-*C++17 • DLL / Hashmap • LRU Eviction*
-
-    In-memory key-value store utilizing a linked-list backed hash map structure. Engineered for deterministic $O(1)$ operations, explicit pointer discipline, and customized persistence layout patterns.
-
-
-### 2. Infrastructure Analysis
-
-- [repoScanner](https://github.com/tecnolgd/repoScanner)     
-*Python 3.12 • AST Analysis • Multi-Language • Dependency Parser*
-
-    Static repository parser engineered to map dependency matrices, extract abstract syntax trees, and isolate multi-language metrics. Optimized for memory-bounded execution over massive, multi-gigabyte trees.
-
-### 3. Developer Tools
-
-- [TermiFlow](https://github.com/tecnolgd/TermiFlow)    
-*C++17 • Event-Driven • POSIX CLI*    
-
-    Keyboard-centric CLI command dispatcher built with an asynchronous architecture. Features isolated runtime shortcuts, modular plugin hook environments, and low-latency process invocation metrics.
-
-- [libcvault](https://github.com/tecnolgd/libcvault)     
-*C++17 • Static Analysis • Library*     
-
-    A C++ library for static file metadata analysis. It is intended to provide reusable functions for another C++ program(as of now) rather than operate as a standalone executable.
-
+[GitHub](https://github.com/tecnolgd) • [Blog](https://tecnolgd.github.io/blog-tecnolgd/) • [Email](mailto:tecnolgd@proton.me) • [GPG Key](https://github.com/tecnolgd.gpg) 
 
 ---
-*Read my project updates, deep dives and release logs at [blog-tecnolgd](https://tecnolgd.github.io/blog-tecnolgd/).*
+
+## Featured Projects
+
+### velocache
+*C++17 • Hashmap / DLL • Deterministic $O(1)$ Operations* 
+
+In-memory key-value store using a linked-list backed hash map structure. Built with explicit memory management, deterministic LRU eviction, and custom persistence layouts.  
+
+[Source Code](https://github.com/tecnolgd/velocache) • [Docker](https://hub.docker.com/r/tecnolgd/velocache)
+
+### repoScanner
+*Python 3.12 • C++ Engine Integration • Static Analysis • PyPI Package*
+
+Lightweight CLI tool for code metrics, dependency extraction, and file sorting. Uses Python standard library by default with optional C++ native acceleration (`libcvault`).
+
+[PyPI Package](https://pypi.org/tecnolgd/project/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
+
+### TermiFlow
+*C++17 • Cross-Platform CLI launcher • System Automation*  
+Command-driven terminal launcher and productivity suite built to execute shortcuts, track command history, and display system metrics without leaving the shell.
+
+[Source Code](https://github.com/tecnolgd/TermiFlow)
+
+---
+
+## Open Source Contributions
+
+###  [OutSquareCapital/pyochain](https://github.com/OutSquareCapital/pyochain)
+*Python • Rust • Pyo3 • Functional Programming*
+
+[Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+
+### [qualcomm/eld](https://github.com/qualcomm/eld)
+*embedded • embedded-systems*
+
+[Merged PRs](https://github.com/qualcomm/eld/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+
+---
+
+## Core Libraries
+
+### libcvault
+*C++17 • Static Analysis Library • FFI-Compatible**  
+Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
+
+[Source Code](https://github.com/tecnolgd/libcvault)
