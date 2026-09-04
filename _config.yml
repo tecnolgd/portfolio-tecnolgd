@@ -5,3 +5,5 @@ minima:
 
 plugins: 
   - jekyll-feed
+
+show_title: false
