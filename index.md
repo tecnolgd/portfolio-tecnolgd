@@ -11,7 +11,7 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
 ## Featured Projects       
 
-- **velocache**
+- **velocache**        
     *C++17 • Hashmap / DLL • Deterministic $O(1)$ Operations* 
 
     In-memory key-value store using a linked-list backed hash map structure. Built with explicit memory management, deterministic LRU eviction, and custom persistence layouts.  
@@ -25,7 +25,7 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
     [PyPI Package](https://pypi.org/tecnolgd/project/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
 
-- **TermiFlow**
+- **TermiFlow**        
     *C++17 • Cross-Platform CLI launcher • System Automation*
 
     Command-driven terminal launcher and productivity suite built to execute shortcuts, track command history, and display system metrics without leaving the shell.
@@ -50,8 +50,7 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
 ## Core Libraries       
 
-- **libcvault**     
-    
+- **libcvault**         
     *C++17 • Static Analysis Library • FFI-Compatible*  
 
     Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
