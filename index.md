@@ -38,12 +38,12 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
 ## Open Source Contributions       
 
-- [**OutSquareCapital/pyochain**](https://github.com/OutSquareCapital/pyochain)
+- [**OutSquareCapital/pyochain**](https://github.com/OutSquareCapital/pyochain) 
     *Python • Rust • Pyo3 • Functional Programming*
 
     [Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)          
 
-- [**qualcomm/eld**](https://github.com/qualcomm/eld)
+- [**qualcomm/eld**](https://github.com/qualcomm/eld)      
     *embedded • embedded-systems*
 
     [Merged PRs](https://github.com/qualcomm/eld/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
@@ -52,8 +52,9 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
 ## Core Libraries       
 
-- **libcvault**
-    *C++17 • Static Analysis Library • FFI-Compatible**  
+- **libcvault**     
+    
+    **C++17 • Static Analysis Library • FFI-Compatible**  
 
     Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
 
