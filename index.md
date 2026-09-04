@@ -35,7 +35,12 @@ Command-driven terminal launcher and productivity suite built to execute shortcu
 ###  [OutSquareCapital/pyochain](https://github.com/OutSquareCapital/pyochain)
 *Python • Rust • Pyo3 • Functional Programming*
 
-[Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd)
+[Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+
+### [qualcomm/eld](https://github.com/qualcomm/eld)
+*embedded • embedded-systems*
+
+[Merged PRs](https://github.com/qualcomm/eld/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
 
 ---
 
