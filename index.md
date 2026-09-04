@@ -1,7 +1,13 @@
+# tecnolgd
 
 Systems & Developer Tools Engineer building high-performance C++ utilities, static analysis engines, and CLI workflows.
 
-[GitHub](https://github.com/tecnolgd) • [Blog](https://tecnolgd.github.io/blog-tecnolgd/) • [Email](mailto:tecnolgd@proton.me) • [GPG Key](https://github.com/tecnolgd.gpg) 
+<div align = "center">
+    <a href = "https://github.com/tecnolgd"> GitHub |</a>
+    <a href = "https://tecnolgd.github.io/blog-tecnolgd"> Blog |</a>
+    <a href = "mailto:tecnolgd@proton.me"> Email |</a>
+    <a href = "https://github.com/tecnolgd.gpg"> GPG Key</a>
+</div>
 
 ---
 
