@@ -47,7 +47,9 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
     [Merged PRs](https://github.com/qualcomm/eld/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
 
 - [**Mher-DeLight/cpersist**](https://github.com/Mher-DeLight/cpersist)
-    *data-serialization • deserialization • file i/o*
+
+  *data-serialization • deserialization • file i/o*
+  
     [Merged PRs](https://github.com/Mher-DeLight/cpersist/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
 
 ---
