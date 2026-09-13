@@ -50,7 +50,7 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
 - [**tyouhyou/imprint**](https://github.com/tyouhyou/imprint)
       *cpp17 • embedded • retained-mode-gui • cross-platform • web-assembly*
-      [**Merged PRs**](https://github.com/tyouhyou/imprint/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+      [Merged PRs](https://github.com/tyouhyou/imprint/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
 
 ---
 
