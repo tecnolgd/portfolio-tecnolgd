@@ -48,6 +48,10 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
     *data-serialization • deserialization • file i/o*
     [Merged PRs](https://github.com/Mher-DeLight/cpersist/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
 
+- [**cherries-works/pulse**](https://github.com/cherries-works/pulse)
+    *C • linux • monitoring-dashboard • web-interface*
+    [Merged PRs](https://github.com/cherries-works/pulse/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+
 ---
 
 ## Core Libraries       
