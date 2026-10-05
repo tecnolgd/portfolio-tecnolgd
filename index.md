@@ -56,6 +56,10 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
     *C • linux • monitoring-dashboard • web-interface*
     [Merged PRs](https://github.com/cherries-works/pulse/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
 
+  - [**CoreTrace/coretrace**](https://github.com/CoreTrace/coretrace)
+    *C++ • analysis-orchestrator*
+    [Merged PRs](https://github.com/CoreTrace/coretrace/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+
 ---
 
 ## Core Libraries       
