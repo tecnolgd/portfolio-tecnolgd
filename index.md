@@ -60,6 +60,10 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
     *C++ • analysis-orchestrator*
     [Merged PRs](https://github.com/CoreTrace/coretrace/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
 
+- [**wavefnd/Wave**](https://github.com/wavefnd/Wave)
+    *llvm • wave-lang • programming-language*
+    [Merged PRs](https://github.com/wavefnd/Wave/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+
 ---
 
 ## Core Libraries       
