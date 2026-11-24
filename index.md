@@ -36,33 +36,36 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
 ## Open Source Contributions       
 
-- [**OutSquareCapital/pyochain**](https://github.com/OutSquareCapital/pyochain)
-      *Python • Rust • Pyo3 • Functional Programming*
-      [Merged PRs](https://github.com/OutSquareCapital/pyochain/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)          
+- [**OutSquareCapital/pyochain**](https://github.com/OutSquareCapital/pyochain)    *Python • Rust • Pyo3 • Functional Programming*      
+    - [PR #89](https://github.com/OutSquareCapital/pyochain/pull/89) - Migrated doctests to markdown tests in stub files
+    - [PR #92](https://github.com/OutSquareCapital/pyochain/pull/92) - Aligned `Range` constructor API with python `range`
+    - [PR #95](https://github.com/OutSquareCapital/pyochain/pull/95) - Added `return_named_values` property to handle dscription leaks
 
-- [**qualcomm/eld**](https://github.com/qualcomm/eld)
-        *embedded • embedded-systems*
-      [Merged PRs](https://github.com/qualcomm/eld/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+- [**qualcomm/eld**](https://github.com/qualcomm/eld)    *embedded • embedded-systems*     
+    - [PR #1819](https://github.com/qualcomm/eld/pull/1819) - Renamed `checkUnsignedRange` to `reportUnsignedOverflow` for accurate description of the function
 
-- [**Mher-DeLight/cpersist**](https://github.com/Mher-DeLight/cpersist)
-    *data-serialization • deserialization • file i/o*
-    [Merged PRs](https://github.com/Mher-DeLight/cpersist/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+- [**Mher-DeLight/cpersist**](https://github.com/Mher-DeLight/cpersist)    *data-serialization • deserialization • file i/o*    
+    - [PR #27](https://github.com/Mher-DeLight/cpersist/pull/27) - Added `std::filesystem::path` serialization support
+    - [PR #37](https://github.com/Mher-DeLight/cpersist/pull/37) - Added custom save folder name support with I/P sanitization
 
-- [**tyouhyou/imprint**](https://github.com/tyouhyou/imprint)
-    *cpp17 • embedded • retained-mode-gui • cross-platform • web-assembly*
-    [Merged PRs](https://github.com/tyouhyou/imprint/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+- [**tyouhyou/imprint**](https://github.com/tyouhyou/imprint)    *cpp17 • embedded • retained-mode-gui • cross-platform • web-assembly*     
+    - [PR #4](https://github.com/tyouhyou/imprint/pull/4) - Added `halign` and `valign` attributes to `.ui` files and builders
+    - [PR #5](https://github.com/tyouhyou/imprint/pull/5) - Added `GroupBox` widget and gallery showcase
 
-- [**cherries-works/pulse**](https://github.com/cherries-works/pulse)
-    *C • linux • monitoring-dashboard • web-interface*
-    [Merged PRs](https://github.com/cherries-works/pulse/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+- [**cherries-works/pulse**](https://github.com/cherries-works/pulse)    *C • linux • monitoring-dashboard • web-interface*
+    - [PR #33](https://github.com/cherries-works/pulse/pull/33) - Added  independent cooldown parameter for alert notifications
+    - [PR #45](https://github.com/cherries-works/pulse/pull/45) - Added `--current` flag to print current configuration
+    - [PR #56](https://github.com/cherries-works/pulse/pull/56) - Support dynamic printing of operators in `config --current`
 
-- [**CoreTrace/coretrace**](https://github.com/CoreTrace/coretrace)
-    *C++ • analysis-orchestrator*
-    [Merged PRs](https://github.com/CoreTrace/coretrace/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+- [**CoreTrace/coretrace**](https://github.com/CoreTrace/coretrace)    *C++ • analysis-orchestrator*    
+    - [PR #166](https://github.com/CoreTrace/coretrace/pull/166) - Handled std::string_view safely and added missing `isMangled` and type tests
+    - [PR #168](https://github.com/CoreTrace/coretrace/pull/168) - Migrated `isMangled` to `src/ctrace_tools/mangle.cpp`
+    - [PR #197](https://github.com/CoreTrace/coretrace/pull/197) - Added unit tests for `ctrace::RunDirectory`
 
-- [**wavefnd/Wave**](https://github.com/wavefnd/Wave)
-    *llvm • wave-lang • programming-language*
-    [Merged PRs](https://github.com/wavefnd/Wave/pulls?q=is%3Apr+author%3Atecnolgd+is%3Aclosed)
+- [**wavefnd/Wave**](https://github.com/wavefnd/Wave)    *llvm • wave-lang • programming-language*     
+    - [PR #921](https://github.com/wavefnd/Wave/pull/921) - Used null-delimited git ls-files to prevent quote decoding errors
+    - [PR #926](https://github.com/wavefnd/Wave/pull/926) - Preserved raw-string contents when detecting Rust function boundaries
+    - [PR #1132](https://github.com/wavefnd/Wave/pull/1132) - Skip non-executable files in `package::which`
 
 ---
 
