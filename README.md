@@ -1,8 +1,9 @@
 # portfolio-tecnolgd
 
-A minimalist, high-performance portfolio site showcasing core systems, infrastructure, and developer tools.
 
-Built with **Jekyll** using a custom-configured, zero-bloat dark implementation of the **Minima** theme.
+A minimalist, high-performance portfolio site showcasing core systems, infrastructure, and developer tools. Built with **Jekyll** using a custom-configured, zero-bloat dark implementation of the **Minima** theme.
+
+[**Live Site**](https://tecnolgd.github.io/portfolio-tecnolgd/)
 
 ## Architecture & Stack
 
@@ -13,10 +14,10 @@ Built with **Jekyll** using a custom-configured, zero-bloat dark implementation 
 
 ## Project Directory
 
-* **`_config.yml`** — Global site metadata and styling skins
-* **`_includes/custom-head.html`** — Native layout hooks (custom SVG favicon integration)
-* **`favicon.svg`** — Custom-designed layered vector asset
-* **`index.md`** — Core portfolio workspace (pure markdown, zero-bloat structure)
+- `_config.yml` — Global site metadata and styling skins
+- `_includes/custom-head.html` — Native layout hooks (custom SVG favicon integration)
+- `favicon.svg` — Custom-designed layered vector asset
+- `index.md` — Core portfolio workspace (pure markdown, zero-bloat structure)
 
 ---
 *Optimized for rapid loading, maximum readability, and semantic structure.*
