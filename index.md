@@ -23,7 +23,7 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 
     CLI repository analyzer extracting code metrics, Python imports, C/C++ includes, and language distributions across 40+ file extensions with automated JSON report export. Runs with zero external dependencies on the Python standard library by default, with an optional `pybind11`-bridged `libcvault` native C++ engine achieving ~49–50 ms mean scan latency.
 
-    [PyPI Package](https://pypi.org/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
+    [PyPI Package](https://pypi.org/project/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
 
 - **TermiFlow**        
     *C++17 • Cross-Platform • CLI Productivity Suite • Modular Architecture*
