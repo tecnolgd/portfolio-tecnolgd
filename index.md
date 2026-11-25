@@ -62,7 +62,7 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
     - [PR #56](https://github.com/cherries-works/pulse/pull/56) - Support dynamic printing of operators in `config --current`       
 
 - [**CoreTrace/coretrace**](https://github.com/CoreTrace/coretrace)    *C++ • Analysis Orchestrator*    
-    - [PR #166](https://github.com/CoreTrace/coretrace/pull/166) - Handled std::string_view safely and added missing `isMangled` and type tests
+    - [PR #166](https://github.com/CoreTrace/coretrace/pull/166) - Handled `std::string_view` safely and added missing `isMangled` and type tests
     - [PR #168](https://github.com/CoreTrace/coretrace/pull/168) - Migrated `isMangled` to `src/ctrace_tools/mangle.cpp`
     - [PR #197](https://github.com/CoreTrace/coretrace/pull/197) - Added unit tests for `ctrace::RunDirectory`      
 
