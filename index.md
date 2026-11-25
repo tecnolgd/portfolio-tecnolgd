@@ -12,23 +12,23 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 ## Featured Projects       
 
 - **velocache**        
-    *C++17 • Hashmap • DLL(Doubly Linked List) • Deterministic O(1) Operations* 
+    *C++17 • Hashmap • Doubly Linked List •  Zero Dependencies • O(1) Operations* 
 
-    In-memory key-value store using a linked-list backed hash map structure. Built with explicit memory management, deterministic LRU eviction, and custom persistence layouts.  
+    In-memory LRU cache engine achieving 2.53M GET ops/sec (0.23 μs p50) and 1.00M PUT ops/sec (0.26 μs p50) via hash-map and doubly linked list integration. Features runtime-configurable capacity, tail-to-head filesystem serialization for state recovery across restarts and interruption signals, and a ~4.3 MB multi-stage Alpine Docker image.  
 
     [Source Code](https://github.com/tecnolgd/velocache) • [Docker](https://hub.docker.com/r/tecnolgd/velocache)     
 
 - **repoScanner**   
     *Python 3.12 • C++ Library Integration • Static Analysis • PyPI Package*
 
-    Lightweight CLI tool for code metrics, dependency extraction, and file sorting. Uses Python standard library by default with optional C++ native acceleration (`libcvault`).
+    CLI repository analyzer extracting code metrics, Python imports, C/C++ includes, and language distributions across 40+ file extensions with automated JSON report export. Runs with zero external dependencies on the Python standard library by default, with an optional `pybind11`-bridged `libcvault` native C++ engine achieving ~49–50 ms mean scan latency.
 
     [PyPI Package](https://pypi.org/tecnolgd/project/repoScanner/) • [Source Code](https://github.com/tecnolgd/repoScanner) • [Release Writeup](https://tecnolgd.github.io/blog-tecnolgd/posts/post-5.html)
 
 - **TermiFlow**        
-    *C++17 • Cross-Platform • CLI launcher • System Automation*
+    *C++17 • Cross Platform • CLI Productivity Suite• Modular Architecture*
 
-    Command-driven terminal launcher and productivity suite built to execute shortcuts, track command history, and display system metrics without leaving the shell.
+    Command-driven terminal utility for launching applications, managing custom shortcuts, browsing command history, switching themes, and checking system stats (CPU, memory, and uptime) from the shell. Structured around separated business logic, UI, and configuration/persistence layers with `Makefile` builds for Linux and Windows (MinGW) and included benchmarks.
 
     [Source Code](https://github.com/tecnolgd/TermiFlow)
 
@@ -77,6 +77,6 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
 - **libcvault**         
     *C++17 • Static Analysis Library • FFI-Compatible*  
 
-    Reusable C++ library engineered for static file metadata analysis and high-throughput directory scanning. Powers the native engine for `repoScanner`.  
+    Reusable C++17 library built on `<filesystem>` for static file metadata indexing, byte-size and name sorting, filename search, and line counting. Supports standalone linking via CMake/Make and exposes raw buffer access (`getFiles()`) for FFI bindings, powering the native C++ acceleration backend for `repoScanner`.
 
     [Source Code](https://github.com/tecnolgd/libcvault)
