@@ -67,6 +67,9 @@ Systems & Developer Tools Engineer building high-performance C++ utilities, stat
     - [PR #926](https://github.com/wavefnd/Wave/pull/926) - Preserved raw-string contents when detecting Rust function boundaries
     - [PR #1132](https://github.com/wavefnd/Wave/pull/1132) - Skip non-executable files in `package::which`
 
+- [**FloofyPlasma/smelt**](https://github.com/FloofyPlasma/smelt)    *Declarative Build System • C/C++ Support*       
+    - [PR #40](https://github.com/FloofyPlasma/smelt/pull/40) - Define `NDEBUG` when `debug_info` is disabled
+
 ---
 
 ## Core Libraries       
